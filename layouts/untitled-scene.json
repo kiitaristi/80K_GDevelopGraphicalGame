@@ -18,17 +18,11 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5843784410740935,
+    "zoomFactor": 0.4633111824513987,
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [
-    {
-      "name": "Variable",
-      "type": "number",
-      "value": 0
-    }
-  ],
+  "variables": [],
   "instances": [
     {
       "angle": 0,
@@ -101,38 +95,6 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
-      "name": "Dash_Power_Up",
-      "persistentUuid": "77aa2a5f-053e-433a-8629-e391569a40b9",
-      "width": 0,
-      "x": 292,
-      "y": 341,
-      "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "UI",
-      "name": "dash_text_test_lol",
-      "persistentUuid": "7faa977e-f190-4c3d-8ae0-e0715d8059b5",
-      "width": 0,
-      "x": 516,
-      "y": 294,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
       "layer": "UI",
       "name": "Upload_Timer",
       "persistentUuid": "ee177a00-d58a-4552-a238-bdf20a348fd5",
@@ -148,12 +110,12 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 432,
+      "height": 308,
       "keepRatio": true,
       "layer": "",
       "name": "BG",
       "persistentUuid": "1ac4e182-14b8-48ea-a02d-4b6d85729471",
-      "width": 1118,
+      "width": 359,
       "x": 86,
       "y": 155,
       "zOrder": 0,
@@ -179,16 +141,82 @@
     },
     {
       "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 171,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BG",
+      "persistentUuid": "8c0e2e87-6632-4bbe-b9a1-fe93ae67948f",
+      "width": 295,
+      "x": 604,
+      "y": 256,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 157,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BG",
+      "persistentUuid": "26bd1ae3-7c77-4cbf-8bfa-f2ff113bfa99",
+      "width": 295,
+      "x": 380,
+      "y": 503,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewSprite",
+      "persistentUuid": "b80681aa-0ed9-4263-a449-a653754b5eb4",
+      "width": 0,
+      "x": 465,
+      "y": 448,
+      "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Fast_shoot",
+      "persistentUuid": "87ce0e2f-d78e-4cf5-803a-b32438f66fc8",
+      "width": 0,
+      "x": 488,
+      "y": 323,
+      "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
       "layer": "UI",
-      "name": "Overclock_times",
-      "persistentUuid": "fb7cc4f1-9bcd-45a2-ae06-608450fa2eb4",
+      "name": "Equipped_Powerup",
+      "persistentUuid": "f7724462-372e-480f-8205-c7c9dd4c6e04",
       "width": 0,
-      "x": 128,
-      "y": 90,
-      "zOrder": 15,
+      "x": 1081,
+      "y": 15,
+      "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -198,119 +226,23 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Player",
+      "name": "Bullet",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
       "behaviors": [
         {
-          "name": "FireBullet",
-          "type": "FireBullet::FireBullet",
-          "FireCooldown": 0.1,
-          "HasJustFired": false,
-          "RotateBullet": true,
-          "FiringArc": 45,
-          "BulletQuantity": 1,
-          "AngleVariance": 0,
-          "BulletSpeedVariance": 0,
-          "AmmoQuantity": 0,
-          "ShotsPerReload": 20,
-          "ReloadDuration": 1,
-          "MaxAmmo": 100,
-          "ShotsBeforeNextReload": 0,
-          "TotalShotsFired": 0,
-          "TotalBulletsCreated": 0,
-          "StartingAmmo": 20,
-          "TotalReloadsCompleted": 0,
-          "UnlimitedAmmo": true,
-          "ReloadInProgress": false,
-          "HeatIncreasePerShot": 0,
-          "HeatLevel": 0,
-          "AutomaticReloading": true,
-          "OverheatDuration": 0,
-          "LinearCoolingRate": 0.1,
-          "ExponentialCoolingRate": 0.3,
-          "BulletLayer": "",
-          "RandomizedAngle": 0
-        },
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "acceleration": 900000,
-          "deceleration": 900000,
-          "maxSpeed": 100,
-          "rotateObject": false,
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "customIsometryAngle": 30,
-          "ignoreDefaultControls": false,
-          "movementAngleOffset": 0,
-          "viewpoint": "TopDown"
+          "name": "Bounce",
+          "type": "Bounce::Bounce",
+          "OldX": 0,
+          "OldY": 2.0247e-320,
+          "OldForceAngle": 2.0247e-320,
+          "OldForceLength": 2.0247e-320,
+          "NormalAngle": 2.0247e-320,
+          "BounceCount": 0
         }
       ],
-      "animations": [
-        {
-          "name": "NewSprite",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "NewSprite",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 9,
-                        "y": 14
-                      },
-                      {
-                        "x": 53,
-                        "y": 14
-                      },
-                      {
-                        "x": 53,
-                        "y": 59
-                      },
-                      {
-                        "x": 9,
-                        "y": 59
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Bullet",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
       "animations": [
         {
           "name": "NewSprite2",
@@ -339,20 +271,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 11,
-                        "y": 30
+                        "x": 18,
+                        "y": 23
                       },
                       {
-                        "x": 45,
-                        "y": 30
+                        "x": 42,
+                        "y": 23
                       },
                       {
-                        "x": 45,
-                        "y": 36
+                        "x": 42,
+                        "y": 47
                       },
                       {
-                        "x": 11,
-                        "y": 36
+                        "x": 18,
+                        "y": 47
                       }
                     ]
                   ]
@@ -362,328 +294,6 @@
           ]
         }
       ]
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "Ammo",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [
-        {
-          "name": "ammo",
-          "type": "number",
-          "value": 0
-        }
-      ],
-      "effects": [],
-      "behaviors": [],
-      "string": "Ammo:",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 20,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Ammo:",
-        "font": "",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 20,
-        "color": "0;0;0"
-      }
-    },
-    {
-      "assetStoreId": "6a16d25e5a4b7e16b72187c4cab1164e2e8fba46d78b9af0132f10301b4224e9",
-      "name": "Health_Bar",
-      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "MaxValue": 15,
-        "InitialValue": 15,
-        "BarLeftPadding": 9,
-        "BarRightPadding": 9,
-        "BarBottomPadding": 3,
-        "BarTopPadding": 3,
-        "EasingDuration": 0.25,
-        "PreviousHighValueDuration": 0,
-        "ShowLabel": true
-      },
-      "childrenContent": {
-        "Background": {
-          "bottomMargin": 6,
-          "height": 15,
-          "leftMargin": 11,
-          "rightMargin": 11,
-          "texture": "Copper Bar Border.png",
-          "tiled": true,
-          "topMargin": 6,
-          "width": 96
-        },
-        "Buffer": {
-          "bottomMargin": 0,
-          "height": 8,
-          "leftMargin": 0,
-          "rightMargin": 0,
-          "texture": "Framed Pixel Red Fill Bar.png",
-          "tiled": false,
-          "topMargin": 0,
-          "width": 32
-        },
-        "FillBar": {
-          "bottomMargin": 3,
-          "height": 8,
-          "leftMargin": 4,
-          "rightMargin": 4,
-          "texture": "Framed Pixel Red Fill Bar.png",
-          "tiled": false,
-          "topMargin": 3,
-          "width": 32
-        },
-        "Label": {
-          "bold": false,
-          "italic": false,
-          "smoothed": true,
-          "underlined": false,
-          "string": "8 / 16",
-          "font": "",
-          "textAlignment": "center",
-          "characterSize": 8,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "8 / 16",
-            "font": "",
-            "textAlignment": "center",
-            "verticalTextAlignment": "top",
-            "characterSize": 8,
-            "color": "255;255;255"
-          }
-        }
-      }
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "Health",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Health:",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 20,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Health:",
-        "font": "",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 20,
-        "color": "0;0;0"
-      }
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Dash_Power_Up",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "NewSprite",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "NewSprite5",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 11,
-                        "y": 19
-                      },
-                      {
-                        "x": 55,
-                        "y": 19
-                      },
-                      {
-                        "x": 55,
-                        "y": 55
-                      },
-                      {
-                        "x": 11,
-                        "y": 55
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "dash_text_test_lol",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "right click to dash, f to overclock (increase upload speed at cost of health)",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 20,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "right click to dash, f to overclock (increase upload speed at cost of health)",
-        "font": "",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 20,
-        "color": "0;0;0"
-      }
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "Upload_Timer",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Upload Timer:",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 20,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Upload Timer:",
-        "font": "",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 20,
-        "color": "0;0;0"
-      }
     },
     {
       "adaptCollisionMaskAutomatically": true,
@@ -745,127 +355,16 @@
           ]
         }
       ]
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "overclocked_",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Overclocked!",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 20,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Overclocked!",
-        "font": "",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 20,
-        "color": "0;0;0"
-      }
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "Overclock_times",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "test",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 20,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "test",
-        "font": "",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 20,
-        "color": "0;0;0"
-      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "Player"
-      },
-      {
         "objectName": "Bullet"
       },
       {
-        "objectName": "Ammo"
-      },
-      {
-        "objectName": "Health_Bar"
-      },
-      {
-        "objectName": "overclocked_"
-      },
-      {
-        "objectName": "Overclock_times"
-      },
-      {
-        "objectName": "Health"
-      },
-      {
-        "objectName": "Dash_Power_Up"
-      },
-      {
-        "objectName": "dash_text_test_lol"
-      },
-      {
         "objectName": "BG"
-      },
-      {
-        "objectName": "Upload_Timer"
       }
     ]
   },
@@ -885,47 +384,10 @@
       "actions": [
         {
           "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "Power_ups.Dash.Has_dash",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "Dash_Power_Up",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "dash_text_test_lol"
-          ]
-        },
-        {
-          "type": {
             "value": "Cache"
           },
           "parameters": [
             "Upload_Timer"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "Power_ups.Dash.dash_speed",
-            "=",
-            "10"
           ]
         },
         {
@@ -959,10 +421,12 @@
         },
         {
           "type": {
-            "value": "Cache"
+            "value": "SetNumberVariable"
           },
           "parameters": [
-            "Overclock_times"
+            "Timer_Scale",
+            "=",
+            "1"
           ]
         },
         {
@@ -970,9 +434,17 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "Timer_Scale",
+            "Bullet_speed",
             "=",
-            "1"
+            "300"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Equipped_Powerup"
           ]
         }
       ]
@@ -1041,7 +513,7 @@
           },
           "parameters": [
             "",
-            ".75",
+            ".8",
             "",
             ""
           ]
@@ -1182,8 +654,18 @@
             "Bullet",
             "CursorX(\"\", 0)",
             "CursorY(\"\", 0)",
-            "300",
+            "Bullet_speed",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "times_bounced",
+            "=",
+            "0"
           ]
         }
       ]
@@ -1247,87 +729,6 @@
       "conditions": [
         {
           "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "Player",
-            "Dash_Power_Up",
-            "",
-            "",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "Power_ups.Dash.Has_dash",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "Dash_Power_Up",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "Upload_Timer",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ResetTimer"
-          },
-          "parameters": [
-            "",
-            "\"upload_timer_real\""
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "dash_text_test_lol",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "5"
-          ]
-        },
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "dash_text_test_lol"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
             "value": "Visible"
           },
           "parameters": [
@@ -1351,6 +752,16 @@
             "Overclocked",
             "=",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "upload_timer",
+            ">",
+            "1"
           ]
         },
         {
@@ -1401,45 +812,6 @@
             "2"
           ]
         }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "Timer_Scale",
-                ">",
-                "2"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "Overclock_times",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "Overclock_times",
-                "Text",
-                "=",
-                "\"x \" + ToString(Timer_Scale) + \" !\""
-              ]
-            }
-          ]
-        }
       ]
     },
     {
@@ -1467,16 +839,6 @@
         },
         {
           "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "Power_ups.Dash.dash_speed",
-            "=",
-            "30"
-          ]
-        },
-        {
-          "type": {
             "value": "PauseTimer"
           },
           "parameters": [
@@ -1490,14 +852,6 @@
           },
           "parameters": [
             "overclocked_"
-          ]
-        },
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "Overclock_times"
           ]
         },
         {
@@ -1517,16 +871,6 @@
       "conditions": [
         {
           "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "Power_ups.Dash.Has_dash",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "MouseButtonPressed"
           },
           "parameters": [
@@ -1535,7 +879,17 @@
           ]
         }
       ],
-      "actions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"dash_cooldown\""
+          ]
+        }
+      ],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -1582,7 +936,7 @@
                 "Player",
                 "Player.CenterX() + (1 * Player.TopDownMovement::XVelocity())",
                 "Player.CenterY() + (1 * Player.TopDownMovement::YVelocity())",
-                "175 - (upload_timer * 1.5)",
+                "150",
                 "1"
               ]
             },
@@ -1605,6 +959,104 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Bullet",
+            "BG",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Bounce::Bounce::BounceOff"
+          },
+          "parameters": [
+            "Bullet",
+            "Bounce",
+            "BG",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "PatchCollisionEvents",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "NewSprite",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "NewSprite",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Fast_shoot",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Fast_shoot",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
     }
   ],
   "layers": [
@@ -1690,6 +1142,10 @@
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "Bounce",
+      "type": "Bounce::Bounce"
     },
     {
       "name": "Effect",
