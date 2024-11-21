@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 218,
+    "build": 217,
     "major": 5,
     "minor": 4,
     "revision": 0
@@ -174,6 +174,73 @@
         "name": "NewSprite9",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite10",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite11",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Recording.m4a",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Recording.m4a",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Hyper Light Drifter Sound Design.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Hyper Light Drifter Sound Design.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Rock Club - Scott Pilgrim vs. The World The Game.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Rock Club - Scott Pilgrim vs. The World The Game.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Rox 300 - Scott Pilgrim vs. The World The Game.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Rox 300 - Scott Pilgrim vs. The World The Game.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite12",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -199,6 +266,7 @@
           "BounceCount": 0
         },
         {
+          "isFolded": true,
           "name": "FireBullet",
           "type": "FireBullet::FireBullet",
           "FireCooldown": 0.1,
@@ -229,6 +297,34 @@
           "RandomizedAngle": 0
         },
         {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 15,
+          "CurrentHealth": 0,
+          "MaxHealth": 15,
+          "DamageCooldown": 1,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        },
+        {
           "isFolded": true,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
@@ -243,6 +339,24 @@
           "ignoreDefaultControls": false,
           "movementAngleOffset": 0,
           "viewpoint": "TopDown"
+        },
+        {
+          "isFolded": true,
+          "name": "Turret",
+          "type": "Turret::Turret",
+          "SpeedMax": 360,
+          "Acceleration": 1440,
+          "Deceleration": 36000,
+          "Rotate": true,
+          "AngleMax": 0,
+          "AngleMin": 0,
+          "AimingAngle": 0,
+          "Speed": 2.0247e-320,
+          "MustMoveClockwise": false,
+          "MustMoveCounterClockwise": false,
+          "HasMoved": false,
+          "TargetAngle": 2.0247e-320,
+          "OriginAngle": 2.0247e-320
         }
       ],
       "animations": [
@@ -622,7 +736,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "NewSprite",
+      "name": "Bounce",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -721,6 +835,391 @@
         "characterSize": 20,
         "color": "0;0;0"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Bullet",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "times_bounced",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Bounce",
+          "type": "Bounce::Bounce",
+          "OldX": 0,
+          "OldY": 2.0247e-320,
+          "OldForceAngle": 2.0247e-320,
+          "OldForceLength": 2.0247e-320,
+          "NormalAngle": 2.0247e-320,
+          "BounceCount": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewSprite2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 18,
+                        "y": 23
+                      },
+                      {
+                        "x": 42,
+                        "y": 23
+                      },
+                      {
+                        "x": 42,
+                        "y": 47
+                      },
+                      {
+                        "x": 18,
+                        "y": 47
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Shooter",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "health",
+          "type": "number",
+          "value": 3
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.1,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 100,
+          "CurrentHealth": 0,
+          "MaxHealth": 100,
+          "DamageCooldown": 1,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        },
+        {
+          "name": "Turret",
+          "type": "Turret::Turret",
+          "SpeedMax": 360,
+          "Acceleration": 1440,
+          "Deceleration": 36000,
+          "Rotate": true,
+          "AngleMax": 0,
+          "AngleMin": 0,
+          "AimingAngle": 0,
+          "Speed": 2.0247e-320,
+          "MustMoveClockwise": false,
+          "MustMoveCounterClockwise": false,
+          "HasMoved": false,
+          "TargetAngle": 2.0247e-320,
+          "OriginAngle": 2.0247e-320
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewSprite2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite10",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 10,
+                        "y": 15
+                      },
+                      {
+                        "x": 52,
+                        "y": 15
+                      },
+                      {
+                        "x": 52,
+                        "y": 55
+                      },
+                      {
+                        "x": 10,
+                        "y": 55
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Evil_Bullet",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite11",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 14,
+                        "y": 20
+                      },
+                      {
+                        "x": 46,
+                        "y": 20
+                      },
+                      {
+                        "x": 46,
+                        "y": 50
+                      },
+                      {
+                        "x": 14,
+                        "y": 50
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "You_DIED",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "YOU DIED",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "YOU DIED",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "255;0;0"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "None",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite12",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 8,
+                        "y": 13
+                      },
+                      {
+                        "x": 56,
+                        "y": 13
+                      },
+                      {
+                        "x": 56,
+                        "y": 52
+                      },
+                      {
+                        "x": 8,
+                        "y": 52
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -745,13 +1244,28 @@
         "objectName": "Health_Bar"
       },
       {
-        "objectName": "NewSprite"
+        "objectName": "Bounce"
       },
       {
         "objectName": "overclocked_"
       },
       {
         "objectName": "Upload_Timer"
+      },
+      {
+        "objectName": "Bullet"
+      },
+      {
+        "objectName": "Shooter"
+      },
+      {
+        "objectName": "Evil_Bullet"
+      },
+      {
+        "objectName": "You_DIED"
+      },
+      {
+        "objectName": "None"
       }
     ]
   },
@@ -787,6 +1301,32 @@
       "type": "structure",
       "children": [
         {
+          "name": "Bounce",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Bounce overclocked",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Bounce overclocking",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "has bounce",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "times_bounced_allowed",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
           "name": "Dash",
           "type": "structure",
           "children": [
@@ -796,9 +1336,35 @@
               "value": false
             },
             {
+              "name": "dash timer",
+              "type": "number",
+              "value": 0
+            },
+            {
               "name": "dash_speed",
               "type": "number",
               "value": 1
+            }
+          ]
+        },
+        {
+          "name": "Fast Shoot",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Fast Shoot overclocking",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "fast shoot overclocked",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "has fast shoot",
+              "type": "boolean",
+              "value": false
             }
           ]
         }
@@ -820,7 +1386,17 @@
       "children": []
     },
     {
-      "name": "times_bounced",
+      "name": "Enemy_vision",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "power_up_index",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "power_ups_owned",
       "type": "number",
       "value": 0
     }
@@ -833,6 +1409,14 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/turret"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/health"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/bounce"
