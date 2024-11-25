@@ -179,7 +179,7 @@
         "alwaysLoaded": false,
         "file": "assets/NewSprite10.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite10.png\"}",
         "name": "NewSprite10",
         "smoothed": true,
         "userAdded": false
@@ -239,6 +239,33 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite12",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite13.png\"}",
+        "name": "NewSprite13",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite14",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite15",
         "smoothed": true,
         "userAdded": false
       }
@@ -301,7 +328,7 @@
           "type": "Health::Health",
           "Health": 15,
           "CurrentHealth": 0,
-          "MaxHealth": 15,
+          "MaxHealth": 0,
           "DamageCooldown": 1,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
@@ -965,7 +992,7 @@
           "Health": 100,
           "CurrentHealth": 0,
           "MaxHealth": 100,
-          "DamageCooldown": 1,
+          "DamageCooldown": 0.5,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
           "DamageToBeApplied": 0,
@@ -1037,16 +1064,16 @@
                         "y": 15
                       },
                       {
-                        "x": 52,
+                        "x": 64,
                         "y": 15
                       },
                       {
-                        "x": 52,
-                        "y": 55
+                        "x": 64,
+                        "y": 58
                       },
                       {
                         "x": 10,
-                        "y": 55
+                        "y": 58
                       }
                     ]
                   ]
@@ -1220,6 +1247,275 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Slapper",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "BoidsMovement",
+          "type": "BoidsMovement::BoidsMovement",
+          "MaxSpeed": 360,
+          "MaxAcceleration": 720,
+          "ShouldRotate": true,
+          "CohesionRadius": 64,
+          "AlignmentRadius": 48,
+          "SeparationRadius": 32,
+          "CohesionWeight": 1,
+          "AlignmentWeight": 1,
+          "SeparationWeight": 100,
+          "CollisionLayer": 0
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 3,
+          "CurrentHealth": 0,
+          "MaxHealth": 3,
+          "DamageCooldown": 0.5,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite13",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15,
+                        "y": 21
+                      },
+                      {
+                        "x": 49,
+                        "y": 21
+                      },
+                      {
+                        "x": 49,
+                        "y": 53
+                      },
+                      {
+                        "x": 15,
+                        "y": 53
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Sploder",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "BoidsMovement",
+          "type": "BoidsMovement::BoidsMovement",
+          "MaxSpeed": 360,
+          "MaxAcceleration": 720,
+          "ShouldRotate": true,
+          "CohesionRadius": 64,
+          "AlignmentRadius": 48,
+          "SeparationRadius": 32,
+          "CohesionWeight": 1,
+          "AlignmentWeight": 1,
+          "SeparationWeight": 100,
+          "CollisionLayer": 0
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 3,
+          "CurrentHealth": 0,
+          "MaxHealth": 3,
+          "DamageCooldown": 0.5,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite14",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 13,
+                        "y": 18
+                      },
+                      {
+                        "x": 50,
+                        "y": 18
+                      },
+                      {
+                        "x": 50,
+                        "y": 59
+                      },
+                      {
+                        "x": 13,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Explosion",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite15",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 15
+                      },
+                      {
+                        "x": 60,
+                        "y": 15
+                      },
+                      {
+                        "x": 60,
+                        "y": 62
+                      },
+                      {
+                        "x": 9,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1266,6 +1562,15 @@
       },
       {
         "objectName": "None"
+      },
+      {
+        "objectName": "Slapper"
+      },
+      {
+        "objectName": "Sploder"
+      },
+      {
+        "objectName": "Explosion"
       }
     ]
   },
@@ -1399,6 +1704,11 @@
       "name": "power_ups_owned",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "power_up_activated",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
@@ -1409,6 +1719,10 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/boidsmovement"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/turret"

@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.604083874998888,
+    "zoomFactor": 0.6672773998329988,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -269,6 +269,38 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Sploder",
+      "persistentUuid": "9b3eb719-0e55-4d89-bc41-6635a5ce19d1",
+      "width": 0,
+      "x": 871,
+      "y": 354,
+      "zOrder": 28,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Sploder",
+      "persistentUuid": "59c6df0e-fcb8-4e95-a690-3911accab00f",
+      "width": 0,
+      "x": 730,
+      "y": 351,
+      "zOrder": 29,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -389,311 +421,298 @@
   },
   "events": [
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "Upload_Timer"
-          ]
-        },
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "overclocked_"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "Overclocked",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "Timer_Scale",
-            "=",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "Bullet_speed",
-            "=",
-            "300"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "Enemy_vision",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "FireBullet::FireBullet::SetCooldownOp"
-          },
-          "parameters": [
-            "Shooter",
-            "FireBullet",
-            "=",
-            "0.5",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "FireBullet::FireBullet::SetAngleVarianceOp"
-          },
-          "parameters": [
-            "Shooter",
-            "FireBullet",
-            "=",
-            "20",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Health::Health::SetHealth"
-          },
-          "parameters": [
-            "Shooter",
-            "Health",
-            "3",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "Power_ups[\"Fast Shoot\"][\"has fast shoot\"]",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "Power_ups[\"Fast Shoot\"][\"Fast Shoot overclocking\"]",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "Power_ups[\"Bounce\"][\"has bounce\"]",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "Power_ups[\"Fast Shoot\"][\"fast shoot overclocked\"]",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "Power_ups.Bounce[\"Bounce overclocked\"]",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "Power_ups.Bounce[\"Bounce overclocking\"]",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "Power_ups.Bounce.times_bounced_allowed",
-            "=",
-            "3"
-          ]
-        },
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "None"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "power_ups_owned",
-            "=",
-            "0"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "CentreCamera"
-          },
-          "parameters": [
-            "",
-            "Player",
-            "",
-            "",
-            "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "Ammo",
-            "Text",
-            "=",
-            "\"Ammo: \" + ToString((Player.FireBullet::AmmoQuantity())-(bullets_shot))"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "ammo",
-            "=",
-            "(Player.FireBullet::AmmoQuantity())-(bullets_shot)"
-          ]
-        },
-        {
-          "type": {
-            "value": "ZoomCamera"
-          },
-          "parameters": [
-            "",
-            ".8",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
-          },
-          "parameters": [
-            "Health_Bar",
-            "=",
-            "Player.Health::Health()",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "Test_for_powerups",
-            "Text",
-            "=",
-            "Power_ups_grabbed[power_up_index] + \", \" + power_up_index + \", \" + ToString(VariableChildCount(Power_ups_grabbed)) + \", \" + ToString(TimerElapsedTime(\"bounce timer\")) + \", \" + ToString(TimerElapsedTime(\"bullet speed timer\"))"
-          ]
-        }
-      ],
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Movement, Universal and Miscellaneous",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "Layer"
+                "value": "DepartScene"
               },
               "parameters": [
-                "Bounce",
-                "\"UI\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Visible"
-              },
-              "parameters": [
-                "Bounce"
-              ]
-            },
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "upload_timer",
-                ">",
-                "0"
+                ""
               ]
             }
           ],
           "actions": [
             {
               "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Upload_Timer"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "overclocked_"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Overclocked",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "upload_timer",
+                "Timer_Scale",
                 "=",
-                "60 - trunc((TimerElapsedTime(\"bounce timer\") * Timer_Scale))"
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Bullet_speed",
+                "=",
+                "300"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Enemy_vision",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::SetCooldownOp"
+              },
+              "parameters": [
+                "Shooter",
+                "FireBullet",
+                "=",
+                "0.5",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::SetAngleVarianceOp"
+              },
+              "parameters": [
+                "Shooter",
+                "FireBullet",
+                "=",
+                "20",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::SetHealth"
+              },
+              "parameters": [
+                "Shooter",
+                "Health",
+                "3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::SetHealth"
+              },
+              "parameters": [
+                "Slapper",
+                "Health",
+                "3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::SetHealth"
+              },
+              "parameters": [
+                "Sploder",
+                "Health",
+                "3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups[\"Fast Shoot\"][\"has fast shoot\"]",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups[\"Fast Shoot\"][\"Fast Shoot overclocking\"]",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups[\"Fast Shoot\"][\"fast shoot overclocked\"]",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups[\"Bounce\"][\"has bounce\"]",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Bounce[\"Bounce overclocked\"]",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Bounce[\"Bounce overclocking\"]",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Power_ups.Bounce.times_bounced_allowed",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "None"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "power_ups_owned",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "power_up_activated",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BoidsMovement::BoidsMovement::SetMaxAcceleration"
+              },
+              "parameters": [
+                "Slapper",
+                "BoidsMovement",
+                "700",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BoidsMovement::BoidsMovement::SetMaxSpeed"
+              },
+              "parameters": [
+                "Slapper",
+                "BoidsMovement",
+                "700",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BoidsMovement::BoidsMovement::SetMaxAcceleration"
+              },
+              "parameters": [
+                "Sploder",
+                "BoidsMovement",
+                "500",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BoidsMovement::BoidsMovement::SetMaxSpeed"
+              },
+              "parameters": [
+                "Sploder",
+                "BoidsMovement",
+                "500",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "CentreCamera"
+              },
+              "parameters": [
+                "",
+                "Player",
+                "",
+                "",
+                "0"
               ]
             },
             {
@@ -701,10 +720,53 @@
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
-                "Upload_Timer",
+                "Ammo",
                 "Text",
                 "=",
-                "\"Bounce Patch Upload: \" + ToString(upload_timer)"
+                "\"Ammo: \" + ToString((Player.FireBullet::AmmoQuantity())-(bullets_shot))"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "ammo",
+                "=",
+                "(Player.FireBullet::AmmoQuantity())-(bullets_shot)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ZoomCamera"
+              },
+              "parameters": [
+                "",
+                ".8",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "Health_Bar",
+                "=",
+                "Player.Health::Health()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Test_for_powerups",
+                "Text",
+                "=",
+                "Power_ups_grabbed[power_up_index] + \", \" + power_up_index + \", \" + ToString(VariableChildCount(Power_ups_grabbed)) + \", \" + ToString(TimerElapsedTime(\"sploder time\"))"
               ]
             }
           ],
@@ -714,12 +776,19 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "BooleanVariable"
+                    "value": "Layer"
                   },
                   "parameters": [
-                    "Power_ups.Bounce[\"Bounce overclocking\"]",
-                    "True",
-                    ""
+                    "Bounce",
+                    "\"UI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "Bounce"
                   ]
                 }
               ],
@@ -729,18 +798,93 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "Timer_Scale",
+                    "upload_timer",
                     "=",
-                    "2"
+                    "60 - trunc((TimerElapsedTime(\"bounce timer\") * Timer_Scale))"
                   ]
                 },
                 {
                   "type": {
-                    "value": "Montre"
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
                   },
                   "parameters": [
-                    "overclocked_",
-                    ""
+                    "Upload_Timer",
+                    "Text",
+                    "=",
+                    "\"Bounce Patch Upload: \" + ToString(upload_timer)"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.Bounce[\"Bounce overclocking\"]",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Timer_Scale",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "overclocked_",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.Bounce[\"Bounce overclocking\"]",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Timer_Scale",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "overclocked_"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -750,12 +894,19 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "BooleanVariable"
+                    "value": "Layer"
                   },
                   "parameters": [
-                    "Power_ups.Bounce[\"Bounce overclocking\"]",
-                    "False",
-                    ""
+                    "Fast_shoot",
+                    "\"UI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "Fast_shoot"
                   ]
                 }
               ],
@@ -765,17 +916,93 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "Timer_Scale",
+                    "upload_timer",
                     "=",
-                    "1"
+                    "60 - trunc((TimerElapsedTime(\"bullet speed timer\") * Timer_Scale))"
                   ]
                 },
                 {
                   "type": {
-                    "value": "Cache"
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
                   },
                   "parameters": [
-                    "overclocked_"
+                    "Upload_Timer",
+                    "Text",
+                    "=",
+                    "\"Bullet Speed Patch Upload: \" + ToString(upload_timer)"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "Power_ups[\"Fast Shoot\"][\"Fast Shoot overclocking\"]",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Timer_Scale",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "overclocked_",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "Power_ups[\"Fast Shoot\"][\"Fast Shoot overclocking\"]",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Timer_Scale",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "overclocked_"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -787,125 +1014,105 @@
           "conditions": [
             {
               "type": {
-                "value": "Layer"
+                "value": "KeyPressed"
               },
               "parameters": [
-                "Fast_shoot",
-                "\"UI\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Visible"
-              },
-              "parameters": [
-                "Fast_shoot"
-              ]
-            },
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "upload_timer",
-                ">",
-                "0"
+                "",
+                "d"
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "SetNumberVariable"
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::SetVelocityX"
               },
               "parameters": [
-                "upload_timer",
+                "Player",
+                "TopDownMovement",
                 "=",
-                "60 - trunc((TimerElapsedTime(\"bullet speed timer\") * Timer_Scale))"
+                "1000"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                "value": "KeyPressed"
               },
               "parameters": [
-                "Upload_Timer",
-                "Text",
-                "=",
-                "\"Bullet Speed Patch Upload: \" + ToString(upload_timer)"
+                "",
+                "s"
               ]
             }
           ],
-          "events": [
+          "actions": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "Power_ups[\"Fast Shoot\"][\"Fast Shoot overclocking\"]",
-                    "True",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Timer_Scale",
-                    "=",
-                    "2"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "overclocked_",
-                    ""
-                  ]
-                }
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::SetVelocityY"
+              },
+              "parameters": [
+                "Player",
+                "TopDownMovement",
+                "=",
+                "1000"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "Power_ups[\"Fast Shoot\"][\"Fast Shoot overclocking\"]",
-                    "False",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Timer_Scale",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "overclocked_"
-                  ]
-                }
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "a"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::SetVelocityX"
+              },
+              "parameters": [
+                "Player",
+                "TopDownMovement",
+                "=",
+                "-1000"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "w"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::TopDownMovementBehavior::SetVelocityY"
+              },
+              "parameters": [
+                "Player",
+                "TopDownMovement",
+                "=",
+                "-1000"
               ]
             }
           ]
@@ -940,583 +1147,48 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyPressed"
-          },
-          "parameters": [
-            "",
-            "w"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "TopDownMovementBehavior::TopDownMovementBehavior::SetVelocityY"
-          },
-          "parameters": [
-            "Player",
-            "TopDownMovement",
-            "=",
-            "-1000"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyPressed"
-          },
-          "parameters": [
-            "",
-            "a"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "TopDownMovementBehavior::TopDownMovementBehavior::SetVelocityX"
-          },
-          "parameters": [
-            "Player",
-            "TopDownMovement",
-            "=",
-            "-1000"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyPressed"
-          },
-          "parameters": [
-            "",
-            "s"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "TopDownMovementBehavior::TopDownMovementBehavior::SetVelocityY"
-          },
-          "parameters": [
-            "Player",
-            "TopDownMovement",
-            "=",
-            "1000"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyPressed"
-          },
-          "parameters": [
-            "",
-            "d"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "TopDownMovementBehavior::TopDownMovementBehavior::SetVelocityX"
-          },
-          "parameters": [
-            "Player",
-            "TopDownMovement",
-            "=",
-            "1000"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "MouseButtonFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"Left\""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "FireBullet::FireBullet::FireTowardPosition"
-          },
-          "parameters": [
-            "Player",
-            "FireBullet",
-            "Player.PointX(\"playerx\")",
-            "Player.PointY(\"playery\")",
-            "Bullet",
-            "CursorX(\"\", 0)",
-            "CursorY(\"\", 0)",
-            "Bullet_speed",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "FireBullet::FireBullet::IsReloadInProgress"
-          },
-          "parameters": [
-            "Player",
-            "FireBullet",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "bullets_shot",
-            "=",
-            "0"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "FireBullet::FireBullet::HasJustFired"
-          },
-          "parameters": [
-            "Player",
-            "FireBullet",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "bullets_shot",
-            "+",
-            "1"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "Visible"
-          },
-          "parameters": [
-            "Upload_Timer"
-          ]
-        },
-        {
-          "type": {
-            "value": "KeyPressed"
-          },
-          "parameters": [
-            "",
-            "f"
-          ]
-        },
-        {
-          "type": {
-            "value": "NumberVariable"
-          },
-          "parameters": [
-            "upload_timer",
-            ">",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "Overclocked",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Health::Health::Hit"
-          },
-          "parameters": [
-            "Player",
-            "Health",
-            "3",
-            "no",
-            "no",
-            ""
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Visible"
-              },
-              "parameters": [
-                "Fast_shoot"
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "Power_ups[\"Fast Shoot\"][\"Fast Shoot overclocking\"]",
-                "=",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "Power_ups[\"Fast Shoot\"][\"Fast Shoot overclocking\"]",
-                "True",
-                ""
-              ]
-            }
-          ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "Visible"
-              },
-              "parameters": [
-                "Bounce"
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "Power_ups.Bounce[\"Bounce overclocking\"]",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "Power_ups.Bounce[\"Bounce overclocking\"]",
-                "True",
-                ""
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "NumberVariable"
-          },
-          "parameters": [
-            "upload_timer",
-            "<=",
-            "1"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "Upload_Timer"
-          ]
-        },
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "overclocked_"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "Overclocked",
-            "False",
-            ""
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Visible"
-              },
-              "parameters": [
-                "Bounce"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "Power_ups.Bounce[\"Bounce overclocked\"]",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "Power_ups.Bounce[\"Bounce overclocking\"]",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PauseTimer"
+                "value": "MouseButtonFromTextPressed"
               },
               "parameters": [
                 "",
-                "\"bounce timer\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Visible"
-              },
-              "parameters": [
-                "Fast_shoot"
+                "\"Left\""
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "Power_ups[\"Fast Shoot\"][\"fast shoot overclocked\"]",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "Power_ups[\"Fast Shoot\"][\"Fast Shoot overclocking\"]",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PauseTimer"
-              },
-              "parameters": [
-                "",
-                "\"bullet speed timer\""
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "MouseButtonPressed"
-          },
-          "parameters": [
-            "",
-            "Right"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "ResetTimer"
-          },
-          "parameters": [
-            "",
-            "\"dash_cooldown\""
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "TopDownMovementBehavior::XVelocity"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "TopDownMovementBehavior::YVelocity"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "=",
-                    "0"
-                  ]
-                }
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AddForceVersPos"
+                "value": "FireBullet::FireBullet::FireTowardPosition"
               },
               "parameters": [
                 "Player",
-                "Player.CenterX() + (1 * Player.TopDownMovement::XVelocity())",
-                "Player.CenterY() + (1 * Player.TopDownMovement::YVelocity())",
-                "150",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "0.3"
-              ]
-            },
-            {
-              "type": {
-                "value": "Arreter"
-              },
-              "parameters": [
-                "Player"
+                "FireBullet",
+                "Player.PointX(\"playerx\")",
+                "Player.PointY(\"playery\")",
+                "Bullet",
+                "CursorX(\"\", 0)",
+                "CursorY(\"\", 0)",
+                "Bullet_speed",
+                ""
               ]
             }
           ]
         }
-      ]
+      ],
+      "parameters": []
     },
     {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "PatchCollisionEvents",
+      "name": "Power Ups lol",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -1689,521 +1361,410 @@
               ]
             }
           ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "Bullet",
-            "Shooter",
-            "",
-            "",
-            ""
-          ]
         },
-        {
-          "type": {
-            "value": "Visible"
-          },
-          "parameters": [
-            "Bullet"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Health::Health::Hit"
-          },
-          "parameters": [
-            "Shooter",
-            "Health",
-            "1",
-            "no",
-            "no",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "Evil_Bullet",
-            "Player",
-            "",
-            "",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Health::Health::Hit"
-          },
-          "parameters": [
-            "Player",
-            "Health",
-            "1",
-            "no",
-            "no",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "IsTurnedTowardObject"
-          },
-          "parameters": [
-            "Shooter",
-            "Player",
-            "45",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "Enemy_vision",
-            "True",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "Enemy_vision",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Health::Health::Health"
-          },
-          "parameters": [
-            "Player",
-            "Health",
-            ">",
-            "0",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "FireBullet::FireBullet::FireTowardObject"
-          },
-          "parameters": [
-            "Shooter",
-            "FireBullet",
-            "Shooter.PointX(\"shooter_x\")",
-            "Shooter.PointY(\"shooter_y\")",
-            "Evil_Bullet",
-            "Player",
-            "150",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::ForEach",
-      "object": "Shooter",
-      "conditions": [
-        {
-          "type": {
-            "value": "Health::Health::IsDead"
-          },
-          "parameters": [
-            "Shooter",
-            "Health",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "Shooter",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "Health::Health::IsDead"
-          },
-          "parameters": [
-            "Player",
-            "Health",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "Player",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "You_DIED",
-            "Player.PointX(\"player_x\")",
-            "Player.PointY(\"player_y\")",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "Power_ups.Bounce[\"has bounce\"]",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Visible"
-          },
-          "parameters": [
-            "Bounce"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Bounce::Bounce::BounceOff"
-          },
-          "parameters": [
-            "Bullet",
-            "Bounce",
-            "BG",
-            ""
-          ]
-        }
-      ],
-      "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "Power_ups.Bounce[\"Bounce overclocked\"]",
-                "True",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Power_ups.Bounce.times_bounced_allowed",
-                "=",
-                "6"
-              ]
-            },
-            {
-              "type": {
-                "value": "PauseTimer"
-              },
-              "parameters": [
-                "",
-                "\"bullet speed timer\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
+                "value": "Visible"
               },
               "parameters": [
                 "Upload_Timer"
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "Power_ups.Bounce[\"Bounce overclocked\"]",
-                "False",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "Upload_Timer",
-                ""
-              ]
             },
             {
               "type": {
-                "value": "UnPauseTimer"
+                "value": "KeyPressed"
               },
               "parameters": [
                 "",
-                "\"bounce timer\""
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "Power_ups[\"Fast Shoot\"][\"has fast shoot\"]",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Visible"
-          },
-          "parameters": [
-            "Fast_shoot"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "Bullet_speed",
-            "=",
-            "1000"
-          ]
-        },
-        {
-          "type": {
-            "value": "UnPauseTimer"
-          },
-          "parameters": [
-            "",
-            "\"bullet speed timer\""
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "Power_ups[\"Fast Shoot\"][\"fast shoot overclocked\"]",
-                "True",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Bullet_speed",
-                "=",
-                "1500"
+                "f"
               ]
             },
             {
               "type": {
-                "value": "PauseTimer"
+                "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [
-                "",
-                "\"bullet speed timer\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "Upload_Timer"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "Power_ups[\"Fast Shoot\"][\"fast shoot overclocked\"]",
-                "False",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "Upload_Timer",
-                "Text"
-              ]
-            },
-            {
-              "type": {
-                "value": "UnPauseTimer"
-              },
-              "parameters": [
-                "",
-                "\"bullet speed timer\""
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyPressed"
-          },
-          "parameters": [
-            "",
-            "r"
-          ]
-        },
-        {
-          "type": {
-            "value": "NumberVariable"
-          },
-          "parameters": [
-            "power_ups_owned",
-            ">",
-            "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "power_up_index",
-            "+",
-            "1"
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "StringVariable"
-              },
-              "parameters": [
-                "Power_ups_grabbed[power_up_index]",
-                "=",
-                "\"Bounce\""
-              ]
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
                 "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Overclocked",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "Bounce"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bounce[\"Bounce overclocking\"]",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Bounce\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bounce[\"Bounce overclocking\"]",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    "3",
+                    "no",
+                    "no",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "Fast_shoot"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups[\"Fast Shoot\"][\"Fast Shoot overclocking\"]",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Bullet Speed\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups[\"Fast Shoot\"][\"Fast Shoot overclocking\"]",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    "3",
+                    "no",
+                    "no",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "upload_timer",
+                "<=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Upload_Timer"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "overclocked_"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Overclocked",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "Bounce"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bounce[\"Bounce overclocked\"]",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bounce[\"Bounce overclocking\"]",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"bounce timer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "Fast_shoot"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups[\"Fast Shoot\"][\"fast shoot overclocked\"]",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups[\"Fast Shoot\"][\"Fast Shoot overclocking\"]",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"bullet speed timer\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Right"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"dash_cooldown\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "TopDownMovementBehavior::XVelocity"
+                      },
+                      "parameters": [
+                        "Player",
+                        "TopDownMovement",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "TopDownMovementBehavior::YVelocity"
+                      },
+                      "parameters": [
+                        "Player",
+                        "TopDownMovement",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AddForceVersPos"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Player.CenterX() + (1 * Player.TopDownMovement::XVelocity())",
+                    "Player.CenterY() + (1 * Player.TopDownMovement::YVelocity())",
+                    "150",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Arreter"
+                  },
+                  "parameters": [
+                    "Player"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
               },
               "parameters": [
                 "Power_ups.Bounce[\"has bounce\"]",
@@ -2213,19 +1774,92 @@
             },
             {
               "type": {
-                "value": "Montre"
+                "value": "Visible"
               },
               "parameters": [
-                "Bounce",
-                ""
+                "Bounce"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bounce[\"Bounce overclocked\"]",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bounce.times_bounced_allowed",
+                    "=",
+                    "6"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"bullet speed timer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Upload_Timer"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "None"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bounce[\"Bounce overclocked\"]",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Upload_Timer",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "UnPauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"bounce timer\""
+                  ]
+                }
               ]
             }
           ]
@@ -2235,38 +1869,17 @@
           "conditions": [
             {
               "type": {
-                "value": "StringVariable"
-              },
-              "parameters": [
-                "Power_ups_grabbed[power_up_index]",
-                "!=",
-                "\"Bounce\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Layer"
-              },
-              "parameters": [
-                "Bounce",
-                "\"UI\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanVariable"
+                "value": "BooleanVariable"
               },
               "parameters": [
                 "Power_ups.Bounce[\"has bounce\"]",
-                "False",
+                "True",
                 ""
               ]
             },
             {
               "type": {
-                "value": "Cache"
+                "value": "Visible"
               },
               "parameters": [
                 "Bounce"
@@ -2274,21 +1887,25 @@
             },
             {
               "type": {
-                "value": "ActivateBehavior"
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "power_up_activated",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Bounce::Bounce::BounceOff"
               },
               "parameters": [
                 "Bullet",
                 "Bounce",
-                "no"
-              ]
-            },
-            {
-              "type": {
-                "value": "PauseTimer"
-              },
-              "parameters": [
-                "",
-                "\"bounce timer\""
+                "BG",
+                ""
               ]
             }
           ]
@@ -2298,19 +1915,7 @@
           "conditions": [
             {
               "type": {
-                "value": "StringVariable"
-              },
-              "parameters": [
-                "Power_ups_grabbed[power_up_index]",
-                "=",
-                "\"Bullet Speed\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetBooleanVariable"
+                "value": "BooleanVariable"
               },
               "parameters": [
                 "Power_ups[\"Fast Shoot\"][\"has fast shoot\"]",
@@ -2320,19 +1925,92 @@
             },
             {
               "type": {
-                "value": "Montre"
+                "value": "Visible"
               },
               "parameters": [
-                "Fast_shoot",
-                ""
+                "Fast_shoot"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups[\"Fast Shoot\"][\"fast shoot overclocked\"]",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Bullet_speed",
+                    "=",
+                    "1500"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"bullet speed timer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Upload_Timer"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "None"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups[\"Fast Shoot\"][\"fast shoot overclocked\"]",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Upload_Timer",
+                    "Text"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "UnPauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"bullet speed timer\""
+                  ]
+                }
               ]
             }
           ]
@@ -2342,21 +2020,369 @@
           "conditions": [
             {
               "type": {
-                "value": "StringVariable"
+                "value": "BooleanVariable"
               },
               "parameters": [
-                "Power_ups_grabbed[power_up_index]",
-                "!=",
-                "\"Bullet Speed\""
+                "Power_ups[\"Fast Shoot\"][\"has fast shoot\"]",
+                "True",
+                ""
               ]
             },
             {
               "type": {
-                "value": "Layer"
+                "value": "Visible"
               },
               "parameters": [
-                "Fast_shoot",
-                "\"UI\""
+                "Fast_shoot"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "power_up_activated",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Bullet_speed",
+                "=",
+                "1000"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "r"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "power_ups_owned",
+                ">",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "power_up_index",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "power_up_activated",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Bounce\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bounce[\"has bounce\"]",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Bounce",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "None"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "!=",
+                    "\"Bounce\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "Bounce",
+                    "\"UI\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bounce[\"has bounce\"]",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Bounce"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    "Bounce",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"bounce timer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Bullet Speed\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups[\"Fast Shoot\"][\"has fast shoot\"]",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Fast_shoot",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "None"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "!=",
+                    "\"Bullet Speed\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "Fast_shoot",
+                    "\"UI\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups[\"Fast Shoot\"][\"has fast shoot\"]",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Fast_shoot"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Bullet_speed",
+                    "=",
+                    "300"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"bullet speed timer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "!=",
+                    "\"Bullet Speed\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "!=",
+                    "\"Bounce\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "None",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "RemoveVariableAt"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed",
+                    "power_up_index"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "q"
               ]
             }
           ],
@@ -2366,36 +2392,9 @@
                 "value": "SetBooleanVariable"
               },
               "parameters": [
-                "Power_ups[\"Fast Shoot\"][\"has fast shoot\"]",
-                "False",
+                "power_up_activated",
+                "True",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "Fast_shoot"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Bullet_speed",
-                "=",
-                "300"
-              ]
-            },
-            {
-              "type": {
-                "value": "PauseTimer"
-              },
-              "parameters": [
-                "",
-                "\"bullet speed timer\""
               ]
             }
           ]
@@ -2426,72 +2425,803 @@
               ]
             }
           ]
-        },
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Enemies and Bullets",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "StringVariable"
+                "value": "CollisionNP"
               },
               "parameters": [
-                "Power_ups_grabbed[power_up_index]",
-                "!=",
-                "\"Bullet Speed\""
+                "Bullet",
+                "Shooter",
+                "",
+                "",
+                ""
               ]
             },
             {
               "type": {
-                "value": "StringVariable"
+                "value": "Visible"
               },
               "parameters": [
-                "Power_ups_grabbed[power_up_index]",
-                "!=",
-                "\"Bounce\""
+                "Bullet"
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "Montre"
+                "value": "Health::Health::Hit"
               },
               "parameters": [
-                "None",
+                "Shooter",
+                "Health",
+                "1",
+                "no",
+                "no",
                 ""
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::ForEach",
-      "object": "Bullet",
-      "conditions": [
+        },
         {
-          "type": {
-            "value": "Bounce::Bounce::BounceCount"
-          },
-          "parameters": [
-            "Bullet",
-            "Bounce",
-            ">=",
-            "Power_ups.Bounce.times_bounced_allowed",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Bullet",
+                "Slapper",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "Bullet"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Slapper",
+                "Health",
+                "1",
+                "no",
+                "no",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Bullet",
+                "Sploder",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "Bullet"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Sploder",
+                "Health",
+                "1",
+                "no",
+                "no",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Explosion",
+                "Slapper",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Slapper",
+                "Health",
+                "3",
+                "no",
+                "no",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Explosion",
+                "Sploder",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Sploder",
+                "Health",
+                "3",
+                "no",
+                "no",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Explosion",
+                "Shooter",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Shooter",
+                "Health",
+                "3",
+                "no",
+                "no",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Evil_Bullet",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Player",
+                "Health",
+                "1",
+                "no",
+                "no",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Explosion",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Player",
+                "Health",
+                "3",
+                "no",
+                "no",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Slapper",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Player",
+                "Health",
+                "1",
+                "no",
+                "no",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "IsTurnedTowardObject"
+                  },
+                  "parameters": [
+                    "Shooter",
+                    "Player",
+                    "30",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "IsTurnedTowardObject"
+                  },
+                  "parameters": [
+                    "Sploder",
+                    "Player",
+                    "30",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "IsTurnedTowardObject"
+                  },
+                  "parameters": [
+                    "Slapper",
+                    "Player",
+                    "30",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Enemy_vision",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Enemy_vision",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"sploder time\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Enemy_vision",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Health"
+              },
+              "parameters": [
+                "Player",
+                "Health",
+                ">",
+                "0",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::FireTowardObject"
+              },
+              "parameters": [
+                "Shooter",
+                "FireBullet",
+                "Shooter.PointX(\"shooter_x\")",
+                "Shooter.PointY(\"shooter_y\")",
+                "Evil_Bullet",
+                "Player",
+                "150",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BoidsMovement::BoidsMovement::MoveToObject"
+              },
+              "parameters": [
+                "Sploder",
+                "BoidsMovement",
+                "Player",
+                "100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BoidsMovement::BoidsMovement::MoveToObject"
+              },
+              "parameters": [
+                "Slapper",
+                "BoidsMovement",
+                "Player",
+                "100",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Sploder",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "Distance"
+                      },
+                      "parameters": [
+                        "Sploder",
+                        "Player",
+                        "50",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CompareTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"sploder time\"",
+                        ">=",
+                        "10"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Explosion",
+                    "Sploder.PointX(\"sploder_x\")",
+                    "Sploder.PointY(\"sploder_y\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Explosion",
+                    "Scale",
+                    "=",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Sploder",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Explosion",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Enemy_vision",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Rotate"
+              },
+              "parameters": [
+                "Shooter",
+                "70",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Shooter",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "Shooter",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Shooter",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Slapper",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "Slapper",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Slapper",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Sploder",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "Sploder",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Sploder",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "Player",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Player",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "You_DIED",
+                "Player.PointX(\"player_x\")",
+                "Player.PointY(\"player_y\")",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Bullet",
+          "conditions": [
+            {
+              "type": {
+                "value": "Bounce::Bounce::BounceCount"
+              },
+              "parameters": [
+                "Bullet",
+                "Bounce",
+                ">=",
+                "Power_ups.Bounce.times_bounced_allowed",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Bullet"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::HasJustFired"
+              },
+              "parameters": [
+                "Player",
+                "FireBullet",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "bullets_shot",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::IsReloadInProgress"
+              },
+              "parameters": [
+                "Player",
+                "FireBullet",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "bullets_shot",
+                "=",
+                "0"
+              ]
+            }
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "Bullet"
-          ]
-        }
-      ]
+      "parameters": []
     }
   ],
   "layers": [
@@ -2577,6 +3307,10 @@
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "BoidsMovement",
+      "type": "BoidsMovement::BoidsMovement"
     },
     {
       "name": "Bounce",
