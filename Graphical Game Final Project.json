@@ -268,6 +268,24 @@
         "name": "NewSprite15",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite16",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite17",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -293,7 +311,6 @@
           "BounceCount": 0
         },
         {
-          "isFolded": true,
           "name": "FireBullet",
           "type": "FireBullet::FireBullet",
           "FireCooldown": 0.1,
@@ -879,6 +896,18 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "AdvancedProjectile",
+          "type": "AdvancedProjectile::AdvancedProjectile",
+          "MaxLifetime": 0,
+          "MaxDistanceFromStartingPosition": 0,
+          "MaxSpeed": 0,
+          "MinSpeed": 0,
+          "Acceleration": 0,
+          "StartingSpeed": 0,
+          "DeleteWhenLifetimeExceeded": false,
+          "DeleteWhenDistanceExceeded": false
+        },
+        {
           "name": "Bounce",
           "type": "Bounce::Bounce",
           "OldX": 0,
@@ -1092,7 +1121,20 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "AdvancedProjectile",
+          "type": "AdvancedProjectile::AdvancedProjectile",
+          "MaxLifetime": 0,
+          "MaxDistanceFromStartingPosition": 0,
+          "MaxSpeed": 0,
+          "MinSpeed": 0,
+          "Acceleration": 0,
+          "StartingSpeed": 0,
+          "DeleteWhenLifetimeExceeded": false,
+          "DeleteWhenDistanceExceeded": false
+        }
+      ],
       "animations": [
         {
           "name": "NewSprite2",
@@ -1376,6 +1418,36 @@
           "CollisionLayer": 0
         },
         {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.1,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 360,
+          "BulletQuantity": 90,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 1,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 1,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": false,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": false,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        },
+        {
           "name": "Health",
           "type": "Health::Health",
           "Health": 3,
@@ -1457,9 +1529,51 @@
       ]
     },
     {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Dash_cooldown",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
+    },
+    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Explosion",
+      "name": "Dash",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -1477,7 +1591,68 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite15",
+                  "image": "NewSprite16",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 8,
+                        "y": 16
+                      },
+                      {
+                        "x": 55,
+                        "y": 16
+                      },
+                      {
+                        "x": 55,
+                        "y": 55
+                      },
+                      {
+                        "x": 8,
+                        "y": 55
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Freeze_Time",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite17",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1494,19 +1669,19 @@
                     [
                       {
                         "x": 9,
-                        "y": 15
+                        "y": 16
                       },
                       {
-                        "x": 60,
-                        "y": 15
+                        "x": 55,
+                        "y": 16
                       },
                       {
-                        "x": 60,
-                        "y": 62
+                        "x": 55,
+                        "y": 55
                       },
                       {
                         "x": 9,
-                        "y": 62
+                        "y": 55
                       }
                     ]
                   ]
@@ -1516,6 +1691,48 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "freeze_time_cooldown",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1570,7 +1787,16 @@
         "objectName": "Sploder"
       },
       {
-        "objectName": "Explosion"
+        "objectName": "Dash"
+      },
+      {
+        "objectName": "Freeze_Time"
+      },
+      {
+        "objectName": "Dash_cooldown"
+      },
+      {
+        "objectName": "freeze_time_cooldown"
       }
     ]
   },
@@ -1636,6 +1862,16 @@
           "type": "structure",
           "children": [
             {
+              "name": "Dash overclocked",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Dash overclocking",
+              "type": "boolean",
+              "value": false
+            },
+            {
               "name": "Has_dash",
               "type": "boolean",
               "value": false
@@ -1646,7 +1882,7 @@
               "value": 0
             },
             {
-              "name": "dash_speed",
+              "name": "dash_cooldown_time",
               "type": "number",
               "value": 1
             }
@@ -1672,6 +1908,52 @@
               "value": false
             }
           ]
+        },
+        {
+          "name": "Freeze Time",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Freeze time overclocked",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "freeze time active",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "freeze time available",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "name": "freeze time cooldown",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "freeze time duration",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "freeze time duration timer",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "freeze time overclocking",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "has freeze time",
+              "type": "boolean",
+              "value": false
+            }
+          ]
         }
       ]
     },
@@ -1682,6 +1964,11 @@
     },
     {
       "name": "Bullet_speed",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Bullet_speed_2",
       "type": "number",
       "value": 0
     },
@@ -1709,6 +1996,36 @@
       "name": "power_up_activated",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "Evil_bullet_speed",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Evil_bullet_speed_2",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Enemy_Difficulty",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Slap_speed",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Splode_speed",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Evil_bullet_shoot_speed",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
@@ -1719,6 +2036,10 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/advancedprojectile"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/boidsmovement"

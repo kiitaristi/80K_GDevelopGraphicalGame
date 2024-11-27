@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6672773998329988,
+    "zoomFactor": 0.6897782140104511,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -247,8 +247,8 @@
       "name": "Test_for_powerups",
       "persistentUuid": "2d6cd767-c63f-4922-bc1d-6732c4968821",
       "width": 0,
-      "x": 4,
-      "y": 115,
+      "x": 7,
+      "y": 257,
       "zOrder": 26,
       "numberProperties": [],
       "stringProperties": [],
@@ -276,12 +276,76 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Sploder",
-      "persistentUuid": "9b3eb719-0e55-4d89-bc41-6635a5ce19d1",
+      "name": "Dash",
+      "persistentUuid": "0ba7a848-6bfc-4ad9-a1a7-3dd62e8f098c",
       "width": 0,
-      "x": 871,
-      "y": 354,
-      "zOrder": 28,
+      "x": 350,
+      "y": 381,
+      "zOrder": 30,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "Dash_cooldown",
+      "persistentUuid": "06ac2f57-4b44-4f68-9210-938b229c70dd",
+      "width": 0,
+      "x": 7,
+      "y": 117,
+      "zOrder": 31,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Freeze_Time",
+      "persistentUuid": "47195778-c828-49c8-a156-2a108658f6c9",
+      "width": 0,
+      "x": 570,
+      "y": 393,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "freeze_time_cooldown",
+      "persistentUuid": "4f0c2e72-2dd2-4f02-90c9-adb93c039b60",
+      "width": 0,
+      "x": 7,
+      "y": 142,
+      "zOrder": 34,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Shooter",
+      "persistentUuid": "a9f20f6c-f020-434f-8c2f-0af94cbc596c",
+      "width": 0,
+      "x": 775,
+      "y": 256,
+      "zOrder": 35,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -293,11 +357,27 @@
       "keepRatio": true,
       "layer": "",
       "name": "Sploder",
-      "persistentUuid": "59c6df0e-fcb8-4e95-a690-3911accab00f",
+      "persistentUuid": "c0a84889-8590-4278-b0ab-c6cf2c3d57fa",
       "width": 0,
-      "x": 730,
+      "x": 908,
       "y": 351,
-      "zOrder": 29,
+      "zOrder": 36,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Slapper",
+      "persistentUuid": "705fc7f3-7b8f-48e5-8181-8445fb5c5a33",
+      "width": 0,
+      "x": 941,
+      "y": 439,
+      "zOrder": 37,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -460,6 +540,14 @@
             },
             {
               "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Dash_cooldown"
+              ]
+            },
+            {
+              "type": {
                 "value": "SetBooleanVariable"
               },
               "parameters": [
@@ -495,63 +583,6 @@
               "parameters": [
                 "Enemy_vision",
                 "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::SetCooldownOp"
-              },
-              "parameters": [
-                "Shooter",
-                "FireBullet",
-                "=",
-                "0.5",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::SetAngleVarianceOp"
-              },
-              "parameters": [
-                "Shooter",
-                "FireBullet",
-                "=",
-                "20",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Health::Health::SetHealth"
-              },
-              "parameters": [
-                "Shooter",
-                "Health",
-                "3",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Health::Health::SetHealth"
-              },
-              "parameters": [
-                "Slapper",
-                "Health",
-                "3",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Health::Health::SetHealth"
-              },
-              "parameters": [
-                "Sploder",
-                "Health",
-                "3",
                 ""
               ]
             },
@@ -627,6 +658,96 @@
             },
             {
               "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Dash.Has_dash",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Dash[\"Dash overclocked\"]",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Dash[\"Dash overclocking\"]",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Power_ups.Dash.dash_cooldown_time",
+                "=",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups[\"Freeze Time\"][\"Freeze time overclocked\"]",
+                "False",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups[\"Freeze Time\"][\"freeze time overclocking\"]",
+                "False",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups[\"Freeze Time\"][\"freeze time active\"]",
+                "False",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups[\"Freeze Time\"][\"freeze time available\"]",
+                "True",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Power_ups[\"Freeze Time\"][\"freeze time duration\"]",
+                "=",
+                "10"
+              ]
+            },
+            {
+              "type": {
                 "value": "Cache"
               },
               "parameters": [
@@ -655,46 +776,20 @@
             },
             {
               "type": {
-                "value": "BoidsMovement::BoidsMovement::SetMaxAcceleration"
+                "value": "Cache"
               },
               "parameters": [
-                "Slapper",
-                "BoidsMovement",
-                "700",
-                ""
+                "freeze_time_cooldown"
               ]
             },
             {
               "type": {
-                "value": "BoidsMovement::BoidsMovement::SetMaxSpeed"
+                "value": "SetNumberVariable"
               },
               "parameters": [
-                "Slapper",
-                "BoidsMovement",
-                "700",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BoidsMovement::BoidsMovement::SetMaxAcceleration"
-              },
-              "parameters": [
-                "Sploder",
-                "BoidsMovement",
-                "500",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BoidsMovement::BoidsMovement::SetMaxSpeed"
-              },
-              "parameters": [
-                "Sploder",
-                "BoidsMovement",
-                "500",
-                ""
+                "Enemy_Difficulty",
+                "=",
+                "1"
               ]
             }
           ]
@@ -766,7 +861,48 @@
                 "Test_for_powerups",
                 "Text",
                 "=",
-                "Power_ups_grabbed[power_up_index] + \", \" + power_up_index + \", \" + ToString(VariableChildCount(Power_ups_grabbed)) + \", \" + ToString(TimerElapsedTime(\"sploder time\"))"
+                "Power_ups_grabbed[power_up_index] + \", \" + power_up_index + \", \" + ToString(VariableChildCount(Power_ups_grabbed)) + \", \" + Power_ups[\"Freeze Time\"][\"freeze time duration timer\"] + \", \" + Power_ups[\"Freeze Time\"][\"freeze time cooldown\"] + \", \" + Power_ups[\"Freeze Time\"][\"freeze time active\"] + \", \" + Power_ups[\"Freeze Time\"][\"freeze time available\"] + \", \" + power_up_activated"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Dash_cooldown",
+                "Text",
+                "=",
+                "\"Dash Cooldown: \" + Power_ups.Dash[\"dash timer\"]"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Power_ups.Dash[\"dash timer\"]",
+                "=",
+                "Power_ups.Dash.dash_cooldown_time - trunc((TimerElapsedTime(\"dash_cooldown\")))"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Power_ups[\"Freeze Time\"][\"freeze time duration timer\"]",
+                "=",
+                "Power_ups[\"Freeze Time\"][\"freeze time duration\"] - trunc((TimerElapsedTime(\"freeze time duration timer\")))"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Power_ups[\"Freeze Time\"][\"freeze time cooldown\"]",
+                "=",
+                "120 - trunc((TimerElapsedTime(\"freeze time cooldown timer\")))"
               ]
             }
           ],
@@ -785,10 +921,12 @@
                 },
                 {
                   "type": {
-                    "value": "Visible"
+                    "value": "StringVariable"
                   },
                   "parameters": [
-                    "Bounce"
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Bounce\""
                   ]
                 }
               ],
@@ -812,6 +950,15 @@
                     "Text",
                     "=",
                     "\"Bounce Patch Upload: \" + ToString(upload_timer)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Bounce",
+                    ""
                   ]
                 }
               ],
@@ -903,10 +1050,12 @@
                 },
                 {
                   "type": {
-                    "value": "Visible"
+                    "value": "StringVariable"
                   },
                   "parameters": [
-                    "Fast_shoot"
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Bullet Speed\""
                   ]
                 }
               ],
@@ -930,6 +1079,15 @@
                     "Text",
                     "=",
                     "\"Bullet Speed Patch Upload: \" + ToString(upload_timer)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Fast_shoot",
+                    ""
                   ]
                 }
               ],
@@ -1003,6 +1161,320 @@
                         "overclocked_"
                       ]
                     }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "Dash",
+                    "\"UI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Dash\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "upload_timer",
+                    "=",
+                    "60 - trunc((TimerElapsedTime(\"dash timer\") * Timer_Scale))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Upload_Timer",
+                    "Text",
+                    "=",
+                    "\"Dash Patch Upload: \" + ToString(upload_timer)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Dash",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.Dash[\"Dash overclocking\"]",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Timer_Scale",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "overclocked_",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.Dash[\"Dash overclocking\"]",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Timer_Scale",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "overclocked_"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "Freeze_Time",
+                    "\"UI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Freeze Time\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "upload_timer",
+                    "=",
+                    "60 - trunc((TimerElapsedTime(\"freeze time timer\") * Timer_Scale))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Upload_Timer",
+                    "Text",
+                    "=",
+                    "\"Freeze Time Patch Upload: \" + ToString(upload_timer)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Freeze_Time",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "Power_ups[\"Freeze Time\"][\"freeze time overclocking\"]",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Timer_Scale",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "overclocked_",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "Power_ups[\"Freeze Time\"][\"freeze time overclocking\"]",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Timer_Scale",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "overclocked_"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups[\"Freeze Time\"][\"freeze time active\"]",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "freeze_time_cooldown",
+                    "Text",
+                    "=",
+                    "\"Freeze time duration: \" + Power_ups[\"Freeze Time\"][\"freeze time duration timer\"]"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups[\"Freeze Time\"][\"freeze time active\"]",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "freeze_time_cooldown",
+                    "Text",
+                    "=",
+                    "\"Freeze time cooldown: \" + Power_ups[\"Freeze Time\"][\"freeze time cooldown\"]"
                   ]
                 }
               ]
@@ -1206,6 +1678,12 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -1291,6 +1769,12 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -1367,6 +1851,188 @@
           "conditions": [
             {
               "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Dash",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PushString"
+              },
+              "parameters": [
+                "Power_ups_grabbed",
+                "\"Dash\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeLayer"
+              },
+              "parameters": [
+                "Dash",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Dash",
+                "=",
+                "1150",
+                "=",
+                "50"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Dash"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "power_ups_owned",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"dash timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"dash timer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Freeze_Time",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PushString"
+              },
+              "parameters": [
+                "Power_ups_grabbed",
+                "\"Freeze Time\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeLayer"
+              },
+              "parameters": [
+                "Freeze_Time",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Freeze_Time",
+                "=",
+                "1150",
+                "=",
+                "50"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Freeze_Time"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "power_ups_owned",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"freeze time timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"freeze time timer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "Visible"
               },
               "parameters": [
@@ -1405,14 +2071,6 @@
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
-                {
-                  "type": {
-                    "value": "Visible"
-                  },
-                  "parameters": [
-                    "Bounce"
-                  ]
-                },
                 {
                   "type": {
                     "value": "BooleanVariable"
@@ -1458,7 +2116,7 @@
                   "parameters": [
                     "Player",
                     "Health",
-                    "3",
+                    "5",
                     "no",
                     "no",
                     ""
@@ -1469,14 +2127,6 @@
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
-                {
-                  "type": {
-                    "value": "Visible"
-                  },
-                  "parameters": [
-                    "Fast_shoot"
-                  ]
-                },
                 {
                   "type": {
                     "value": "BooleanVariable"
@@ -1522,7 +2172,119 @@
                   "parameters": [
                     "Player",
                     "Health",
-                    "3",
+                    "5",
+                    "no",
+                    "no",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Dash[\"Dash overclocking\"]",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Dash\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Dash[\"Dash overclocking\"]",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    "5",
+                    "no",
+                    "no",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Dash[\"Dash overclocking\"]",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Freeze Time\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups[\"Freeze Time\"][\"freeze time overclocking\"]",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    "5",
                     "no",
                     "no",
                     ""
@@ -1580,10 +2342,12 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "Visible"
+                    "value": "StringVariable"
                   },
                   "parameters": [
-                    "Bounce"
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Bounce\""
                   ]
                 }
               ],
@@ -1624,10 +2388,12 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "Visible"
+                    "value": "StringVariable"
                   },
                   "parameters": [
-                    "Fast_shoot"
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Bullet Speed\""
                   ]
                 }
               ],
@@ -1662,6 +2428,98 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Dash\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Dash[\"Dash overclocked\"]",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Dash[\"Dash overclocking\"]",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"dash timer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Freeze Time\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups[\"Freeze Time\"][\"Freeze time overclocked\"]",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups[\"Freeze Time\"][\"freeze time overclocking\"]",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"freeze time timer\""
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -1676,19 +2534,18 @@
                 "",
                 "Right"
               ]
-            }
-          ],
-          "actions": [
+            },
             {
               "type": {
-                "value": "ResetTimer"
+                "inverted": true,
+                "value": "Visible"
               },
               "parameters": [
-                "",
-                "\"dash_cooldown\""
+                "Dash_cooldown"
               ]
             }
           ],
+          "actions": [],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -1754,6 +2611,446 @@
                   "parameters": [
                     "Player"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"dash_cooldown\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Dash_cooldown",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Power_ups.Dash[\"dash timer\"]",
+                "<=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Dash_cooldown"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Power_ups[\"Freeze Time\"][\"freeze time active\"]",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Power_ups[\"Freeze Time\"][\"freeze time available\"]",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"freeze time duration timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "freeze_time_cooldown",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AdvancedProjectile::AdvancedProjectile::SetAcceleration"
+              },
+              "parameters": [
+                "Bullet",
+                "AdvancedProjectile",
+                "=",
+                "10",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AdvancedProjectile::AdvancedProjectile::SetMaxSpeed"
+              },
+              "parameters": [
+                "Bullet",
+                "AdvancedProjectile",
+                "=",
+                "10",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AdvancedProjectile::AdvancedProjectile::SetStartingSpeed"
+              },
+              "parameters": [
+                "Bullet",
+                "AdvancedProjectile",
+                "=",
+                "10",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Bullet_speed_2",
+                "=",
+                "Bullet_speed"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Bullet_speed",
+                "=",
+                "10"
+              ]
+            },
+            {
+              "type": {
+                "value": "AdvancedProjectile::AdvancedProjectile::SetAcceleration"
+              },
+              "parameters": [
+                "Evil_Bullet",
+                "AdvancedProjectile",
+                "=",
+                "10",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AdvancedProjectile::AdvancedProjectile::SetMaxSpeed"
+              },
+              "parameters": [
+                "Evil_Bullet",
+                "AdvancedProjectile",
+                "=",
+                "10",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AdvancedProjectile::AdvancedProjectile::SetStartingSpeed"
+              },
+              "parameters": [
+                "Evil_Bullet",
+                "AdvancedProjectile",
+                "=",
+                "10",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Evil_bullet_speed_2",
+                "=",
+                "Evil_bullet_speed"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Evil_bullet_speed",
+                "=",
+                "10"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Power_ups[\"Freeze Time\"][\"freeze time duration timer\"]",
+                "<=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"freeze time cooldown timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups[\"Freeze Time\"][\"freeze time active\"]",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups[\"Freeze Time\"][\"freeze time available\"]",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Bullet_speed",
+                "=",
+                "Bullet_speed_2"
+              ]
+            },
+            {
+              "type": {
+                "value": "AdvancedProjectile::AdvancedProjectile::SetAcceleration"
+              },
+              "parameters": [
+                "Bullet",
+                "AdvancedProjectile",
+                "=",
+                "Bullet_speed",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AdvancedProjectile::AdvancedProjectile::SetMaxSpeed"
+              },
+              "parameters": [
+                "Bullet",
+                "AdvancedProjectile",
+                "=",
+                "Bullet_speed",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AdvancedProjectile::AdvancedProjectile::SetStartingSpeed"
+              },
+              "parameters": [
+                "Bullet",
+                "AdvancedProjectile",
+                "=",
+                "Bullet_speed",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Evil_bullet_speed",
+                "=",
+                "Evil_bullet_speed_2"
+              ]
+            },
+            {
+              "type": {
+                "value": "AdvancedProjectile::AdvancedProjectile::SetAcceleration"
+              },
+              "parameters": [
+                "Evil_Bullet",
+                "AdvancedProjectile",
+                "=",
+                "Evil_bullet_speed",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AdvancedProjectile::AdvancedProjectile::SetMaxSpeed"
+              },
+              "parameters": [
+                "Evil_Bullet",
+                "AdvancedProjectile",
+                "=",
+                "Evil_bullet_speed",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AdvancedProjectile::AdvancedProjectile::SetStartingSpeed"
+              },
+              "parameters": [
+                "Evil_Bullet",
+                "AdvancedProjectile",
+                "=",
+                "Evil_bullet_speed",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Power_ups[\"Freeze Time\"][\"freeze time cooldown\"]",
+                "<=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Power_ups[\"Freeze Time\"][\"freeze time duration timer\"]",
+                "<",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Power_ups[\"Freeze Time\"][\"freeze time active\"]",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups[\"Freeze Time\"][\"freeze time available\"]",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Freeze Time\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "Freeze_Time"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "power_up_activated",
+                    "False",
+                    ""
+                  ]
                 }
               ]
             }
@@ -1774,14 +3071,26 @@
             },
             {
               "type": {
-                "value": "Visible"
+                "value": "StringVariable"
               },
               "parameters": [
-                "Bounce"
+                "Power_ups_grabbed[power_up_index]",
+                "=",
+                "\"Bounce\""
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Bounce",
+                ""
+              ]
+            }
+          ],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -1800,21 +3109,11 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Power_ups.Bounce.times_bounced_allowed",
-                    "=",
-                    "6"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "PauseTimer"
                   },
                   "parameters": [
                     "",
-                    "\"bullet speed timer\""
+                    "\"bounce timer\""
                   ]
                 },
                 {
@@ -1823,6 +3122,46 @@
                   },
                   "parameters": [
                     "Upload_Timer"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "power_up_activated",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.Bounce.times_bounced_allowed",
+                        "=",
+                        "6"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Bounce::Bounce::BounceOff"
+                      },
+                      "parameters": [
+                        "Bullet",
+                        "Bounce",
+                        "BG",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -1860,52 +3199,46 @@
                     "\"bounce timer\""
                   ]
                 }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "Power_ups.Bounce[\"has bounce\"]",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Visible"
-              },
-              "parameters": [
-                "Bounce"
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "power_up_activated",
-                "True",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Bounce::Bounce::BounceOff"
-              },
-              "parameters": [
-                "Bullet",
-                "Bounce",
-                "BG",
-                ""
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "power_up_activated",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.Bounce.times_bounced_allowed",
+                        "=",
+                        "3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Bounce::Bounce::BounceOff"
+                      },
+                      "parameters": [
+                        "Bullet",
+                        "Bounce",
+                        "BG",
+                        ""
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -1925,14 +3258,26 @@
             },
             {
               "type": {
-                "value": "Visible"
+                "value": "StringVariable"
               },
               "parameters": [
-                "Fast_shoot"
+                "Power_ups_grabbed[power_up_index]",
+                "=",
+                "\"Bullet Speed\""
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Fast_shoot",
+                ""
+              ]
+            }
+          ],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -1951,16 +3296,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Bullet_speed",
-                    "=",
-                    "1500"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "PauseTimer"
                   },
                   "parameters": [
@@ -1974,6 +3309,35 @@
                   },
                   "parameters": [
                     "Upload_Timer"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "power_up_activated",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Bullet_speed",
+                        "=",
+                        "1500"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -2011,6 +3375,35 @@
                     "\"bullet speed timer\""
                   ]
                 }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "power_up_activated",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Bullet_speed",
+                        "=",
+                        "1000"
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -2023,39 +3416,371 @@
                 "value": "BooleanVariable"
               },
               "parameters": [
-                "Power_ups[\"Fast Shoot\"][\"has fast shoot\"]",
+                "Power_ups.Dash.Has_dash",
                 "True",
                 ""
               ]
             },
             {
               "type": {
-                "value": "Visible"
+                "value": "StringVariable"
               },
               "parameters": [
-                "Fast_shoot"
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "power_up_activated",
-                "True",
-                ""
+                "Power_ups_grabbed[power_up_index]",
+                "=",
+                "\"Dash\""
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "SetNumberVariable"
+                "value": "Montre"
               },
               "parameters": [
-                "Bullet_speed",
+                "Dash",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Dash[\"Dash overclocked\"]",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"dash timer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Upload_Timer"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "power_up_activated",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.Dash.dash_cooldown_time",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Dash[\"Dash overclocked\"]",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Upload_Timer",
+                    "Text"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "UnPauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"dash timer\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "power_up_activated",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.Dash.dash_cooldown_time",
+                        "=",
+                        "3"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Power_ups[\"Freeze Time\"][\"has freeze time\"]",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Power_ups_grabbed[power_up_index]",
                 "=",
-                "1000"
+                "\"Freeze Time\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Freeze_Time",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups[\"Freeze Time\"][\"Freeze time overclocked\"]",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"freeze time timer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Upload_Timer"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "power_up_activated",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Power_ups[\"Freeze Time\"][\"freeze time duration\"]",
+                        "=",
+                        "20"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups[\"Freeze Time\"][\"Freeze time overclocked\"]",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Upload_Timer",
+                    "Text"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "UnPauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"freeze time timer\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "power_up_activated",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Power_ups[\"Freeze Time\"][\"freeze time duration\"]",
+                        "=",
+                        "10"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups[\"Freeze Time\"][\"freeze time active\"]",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups[\"Freeze Time\"][\"freeze time available\"]",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "power_up_activated",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups[\"Freeze Time\"][\"freeze time active\"]",
+                    "True",
+                    ""
+                  ]
+                }
               ]
             }
           ]
@@ -2069,7 +3794,7 @@
               },
               "parameters": [
                 "",
-                "r"
+                "t"
               ]
             },
             {
@@ -2335,6 +4060,210 @@
                   },
                   "parameters": [
                     "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Dash\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Dash.Has_dash",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Dash",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "None"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "!=",
+                    "\"Dash\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "Dash",
+                    "\"UI\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Dash.Has_dash",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Dash"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Dash.dash_cooldown_time",
+                    "=",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"dash timer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Freeze Time\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups[\"Freeze Time\"][\"has freeze time\"]",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Freeze_Time",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "None"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "!=",
+                    "\"Freeze Time\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "Freeze_Time",
+                    "\"UI\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups[\"Freeze Time\"][\"has freeze time\"]",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Freeze_Time"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"freeze time timer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
                     "!=",
                     "\"Bullet Speed\""
                   ]
@@ -2347,6 +4276,26 @@
                     "Power_ups_grabbed[power_up_index]",
                     "!=",
                     "\"Bounce\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "!=",
+                    "\"Dash\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "!=",
+                    "\"Freeze Time\""
                   ]
                 }
               ],
@@ -2443,219 +4392,315 @@
           "conditions": [
             {
               "type": {
-                "value": "CollisionNP"
+                "value": "DepartScene"
               },
               "parameters": [
-                "Bullet",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Evil_bullet_speed",
+                "=",
+                "150 * Enemy_Difficulty"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Slap_speed",
+                "=",
+                "700 * Enemy_Difficulty"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Splode_speed",
+                "=",
+                "500 * Enemy_Difficulty"
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::SetHealth"
+              },
+              "parameters": [
                 "Shooter",
-                "",
-                "",
+                "Health",
+                "3 * Enemy_Difficulty",
                 ""
               ]
             },
             {
               "type": {
-                "value": "Visible"
+                "value": "Health::Health::SetHealth"
               },
               "parameters": [
-                "Bullet"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Health::Health::Hit"
-              },
-              "parameters": [
-                "Shooter",
-                "Health",
-                "1",
-                "no",
-                "no",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Bullet",
                 "Slapper",
-                "",
-                "",
+                "Health",
+                "3 * Enemy_Difficulty",
                 ""
               ]
             },
             {
               "type": {
-                "value": "Visible"
+                "value": "Health::Health::SetHealth"
               },
               "parameters": [
-                "Bullet"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Health::Health::Hit"
-              },
-              "parameters": [
-                "Slapper",
-                "Health",
-                "1",
-                "no",
-                "no",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Bullet",
                 "Sploder",
-                "",
-                "",
+                "Health",
+                "3 * Enemy_Difficulty",
                 ""
               ]
             },
             {
               "type": {
-                "value": "Visible"
-              },
-              "parameters": [
-                "Bullet"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Health::Health::Hit"
-              },
-              "parameters": [
-                "Sploder",
-                "Health",
-                "1",
-                "no",
-                "no",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Explosion",
-                "Slapper",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Health::Health::Hit"
-              },
-              "parameters": [
-                "Slapper",
-                "Health",
-                "3",
-                "no",
-                "no",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Explosion",
-                "Sploder",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Health::Health::Hit"
-              },
-              "parameters": [
-                "Sploder",
-                "Health",
-                "3",
-                "no",
-                "no",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Explosion",
-                "Shooter",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Health::Health::Hit"
+                "value": "FireBullet::FireBullet::SetCooldownOp"
               },
               "parameters": [
                 "Shooter",
-                "Health",
-                "3",
-                "no",
-                "no",
+                "FireBullet",
+                "=",
+                "0.6 / Enemy_Difficulty",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::SetAngleVarianceOp"
+              },
+              "parameters": [
+                "Shooter",
+                "FireBullet",
+                "=",
+                "21 / Enemy_Difficulty",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BoidsMovement::BoidsMovement::SetMaxAcceleration"
+              },
+              "parameters": [
+                "Slapper",
+                "BoidsMovement",
+                "Slap_speed",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BoidsMovement::BoidsMovement::SetMaxSpeed"
+              },
+              "parameters": [
+                "Slapper",
+                "BoidsMovement",
+                "Slap_speed",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BoidsMovement::BoidsMovement::SetMaxAcceleration"
+              },
+              "parameters": [
+                "Sploder",
+                "BoidsMovement",
+                "Splode_speed",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BoidsMovement::BoidsMovement::SetMaxSpeed"
+              },
+              "parameters": [
+                "Sploder",
+                "BoidsMovement",
+                "Splode_speed",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Evil_bullet_shoot_speed",
+                "=",
+                "0.6 / Enemy_Difficulty"
               ]
             }
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Bullet",
+          "conditions": [],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    "Shooter",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "Bullet"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Shooter",
+                    "Health",
+                    "1",
+                    "no",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    "Slapper",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "Bullet"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Slapper",
+                    "Health",
+                    "1",
+                    "no",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    "Sploder",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "Bullet"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Sploder",
+                    "Health",
+                    "1",
+                    "no",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Evil_Bullet",
           "conditions": [
             {
               "type": {
@@ -2683,36 +4728,13 @@
                 "no",
                 ""
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
-                "value": "CollisionNP"
+                "value": "Delete"
               },
               "parameters": [
-                "Explosion",
-                "Player",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Health::Health::Hit"
-              },
-              "parameters": [
-                "Player",
-                "Health",
-                "3",
-                "no",
-                "no",
+                "Evil_Bullet",
                 ""
               ]
             }
@@ -2755,53 +4777,102 @@
           "conditions": [
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "IsTurnedTowardObject"
-                  },
-                  "parameters": [
-                    "Shooter",
-                    "Player",
-                    "30",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "IsTurnedTowardObject"
-                  },
-                  "parameters": [
-                    "Sploder",
-                    "Player",
-                    "30",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "IsTurnedTowardObject"
-                  },
-                  "parameters": [
-                    "Slapper",
-                    "Player",
-                    "30",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": {
                 "value": "BooleanVariable"
               },
               "parameters": [
                 "Enemy_vision",
                 "=",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "IsTurnedTowardObject"
+                      },
+                      "parameters": [
+                        "Shooter",
+                        "Player",
+                        "45",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "IsTurnedTowardObject"
+                      },
+                      "parameters": [
+                        "Sploder",
+                        "Player",
+                        "30",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "IsTurnedTowardObject"
+                      },
+                      "parameters": [
+                        "Slapper",
+                        "Player",
+                        "90",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "Distance"
+                      },
+                      "parameters": [
+                        "Shooter",
+                        "Player",
+                        "100",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Distance"
+                      },
+                      "parameters": [
+                        "Slapper",
+                        "Player",
+                        "100",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Distance"
+                      },
+                      "parameters": [
+                        "Sploder",
+                        "Player",
+                        "100",
+                        ""
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ],
@@ -2814,15 +4885,6 @@
                 "Enemy_vision",
                 "True",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"sploder time\""
               ]
             }
           ]
@@ -2865,7 +4927,7 @@
                 "Shooter.PointY(\"shooter_y\")",
                 "Evil_Bullet",
                 "Player",
-                "150",
+                "Evil_bullet_speed",
                 ""
               ]
             },
@@ -2877,7 +4939,7 @@
                 "Sploder",
                 "BoidsMovement",
                 "Player",
-                "100",
+                "200",
                 ""
               ]
             },
@@ -2889,7 +4951,7 @@
                 "Slapper",
                 "BoidsMovement",
                 "Player",
-                "100",
+                "200",
                 ""
               ]
             }
@@ -2912,19 +4974,8 @@
                       "parameters": [
                         "Sploder",
                         "Player",
-                        "50",
+                        "100",
                         ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "CompareTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"sploder time\"",
-                        ">=",
-                        "10"
                       ]
                     }
                   ]
@@ -2941,25 +4992,17 @@
                 },
                 {
                   "type": {
-                    "value": "Create"
+                    "value": "FireBullet::FireBullet::FireTowardObject"
                   },
                   "parameters": [
-                    "",
-                    "Explosion",
+                    "Sploder",
+                    "FireBullet",
                     "Sploder.PointX(\"sploder_x\")",
                     "Sploder.PointY(\"sploder_y\")",
+                    "Evil_Bullet",
+                    "Player",
+                    "Evil_bullet_speed",
                     ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ScalableCapability::ScalableBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "Explosion",
-                    "Scale",
-                    "=",
-                    "5"
                   ]
                 },
                 {
@@ -2970,21 +5013,150 @@
                     "Sploder",
                     ""
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
-                    "value": "Wait"
+                    "value": "BooleanVariable"
                   },
                   "parameters": [
-                    "1.5"
+                    "Power_ups[\"Freeze Time\"][\"freeze time active\"]",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BoidsMovement::BoidsMovement::SetMaxAcceleration"
+                  },
+                  "parameters": [
+                    "Slapper",
+                    "BoidsMovement",
+                    "10",
+                    ""
                   ]
                 },
                 {
                   "type": {
-                    "value": "Delete"
+                    "value": "BoidsMovement::BoidsMovement::SetMaxAcceleration"
                   },
                   "parameters": [
-                    "Explosion",
+                    "Sploder",
+                    "BoidsMovement",
+                    "10",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BoidsMovement::BoidsMovement::SetMaxSpeed"
+                  },
+                  "parameters": [
+                    "Slapper",
+                    "BoidsMovement",
+                    "10",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BoidsMovement::BoidsMovement::SetMaxSpeed"
+                  },
+                  "parameters": [
+                    "Sploder",
+                    "BoidsMovement",
+                    "10",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::SetCooldownOp"
+                  },
+                  "parameters": [
+                    "Shooter",
+                    "FireBullet",
+                    "=",
+                    "2",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups[\"Freeze Time\"][\"freeze time active\"]",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BoidsMovement::BoidsMovement::SetMaxSpeed"
+                  },
+                  "parameters": [
+                    "Slapper",
+                    "BoidsMovement",
+                    "Slap_speed",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BoidsMovement::BoidsMovement::SetMaxAcceleration"
+                  },
+                  "parameters": [
+                    "Slapper",
+                    "BoidsMovement",
+                    "Slap_speed",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BoidsMovement::BoidsMovement::SetMaxSpeed"
+                  },
+                  "parameters": [
+                    "Sploder",
+                    "BoidsMovement",
+                    "Splode_speed",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BoidsMovement::BoidsMovement::SetMaxAcceleration"
+                  },
+                  "parameters": [
+                    "Sploder",
+                    "BoidsMovement",
+                    "Splode_speed",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::SetCooldownOp"
+                  },
+                  "parameters": [
+                    "Shooter",
+                    "FireBullet",
+                    "=",
+                    "Evil_bullet_shoot_speed",
                     ""
                   ]
                 }
@@ -3158,10 +5330,11 @@
           "actions": [
             {
               "type": {
-                "value": "Cache"
+                "value": "Delete"
               },
               "parameters": [
-                "Bullet"
+                "Bullet",
+                ""
               ]
             }
           ]
@@ -3216,6 +5389,38 @@
                 "bullets_shot",
                 "=",
                 "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "r"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::ReloadAmmo"
+              },
+              "parameters": [
+                "Player",
+                "FireBullet",
+                ""
               ]
             }
           ]
@@ -3304,6 +5509,10 @@
     }
   ],
   "behaviorsSharedData": [
+    {
+      "name": "AdvancedProjectile",
+      "type": "AdvancedProjectile::AdvancedProjectile"
+    },
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
