@@ -4473,13 +4473,23 @@
             },
             {
               "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Evil_bullet_shoot_speed",
+                "=",
+                "0.6 / Enemy_Difficulty"
+              ]
+            },
+            {
+              "type": {
                 "value": "FireBullet::FireBullet::SetCooldownOp"
               },
               "parameters": [
                 "Shooter",
                 "FireBullet",
                 "=",
-                "0.6 / Enemy_Difficulty",
+                "Evil_bullet_shoot_speed",
                 ""
               ]
             },
@@ -4537,16 +4547,6 @@
                 "BoidsMovement",
                 "Splode_speed",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Evil_bullet_shoot_speed",
-                "=",
-                "0.6 / Enemy_Difficulty"
               ]
             }
           ]
