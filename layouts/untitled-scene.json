@@ -3016,6 +3016,14 @@
                 "True",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "freeze_time_cooldown"
+              ]
             }
           ],
           "events": [
