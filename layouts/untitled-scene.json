@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6897782140104511,
+    "zoomFactor": 0.6455105703311492,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -50,7 +50,7 @@
       "name": "Ammo",
       "persistentUuid": "6bc778fe-45f4-43af-9917-847218d6d5cd",
       "width": 0,
-      "x": 6,
+      "x": 5,
       "y": 11,
       "zOrder": 2,
       "numberProperties": [],
@@ -115,7 +115,7 @@
       "name": "overclocked_",
       "persistentUuid": "813cd9ec-baf2-4c2f-991e-97316e1e2e6a",
       "width": 0,
-      "x": 4,
+      "x": 5,
       "y": 90,
       "zOrder": 14,
       "numberProperties": [],
@@ -134,22 +134,6 @@
       "x": 465,
       "y": 448,
       "zOrder": 18,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Fast_shoot",
-      "persistentUuid": "87ce0e2f-d78e-4cf5-803a-b32438f66fc8",
-      "width": 0,
-      "x": 488,
-      "y": 323,
-      "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -275,45 +259,13 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
-      "name": "Dash",
-      "persistentUuid": "0ba7a848-6bfc-4ad9-a1a7-3dd62e8f098c",
-      "width": 0,
-      "x": 350,
-      "y": 381,
-      "zOrder": 30,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
       "layer": "UI",
       "name": "Dash_cooldown",
       "persistentUuid": "06ac2f57-4b44-4f68-9210-938b229c70dd",
       "width": 0,
-      "x": 7,
+      "x": 5,
       "y": 117,
       "zOrder": 31,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Freeze_Time",
-      "persistentUuid": "47195778-c828-49c8-a156-2a108658f6c9",
-      "width": 0,
-      "x": 570,
-      "y": 393,
-      "zOrder": 33,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -327,7 +279,7 @@
       "name": "freeze_time_cooldown",
       "persistentUuid": "4f0c2e72-2dd2-4f02-90c9-adb93c039b60",
       "width": 0,
-      "x": 7,
+      "x": 5,
       "y": 142,
       "zOrder": 34,
       "numberProperties": [],
@@ -339,13 +291,13 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
-      "name": "Shooter",
-      "persistentUuid": "a9f20f6c-f020-434f-8c2f-0af94cbc596c",
+      "layer": "UI",
+      "name": "Bomb_cooldown",
+      "persistentUuid": "9d1c06de-5415-4a36-a23c-ccc3b164ab19",
       "width": 0,
-      "x": 775,
-      "y": 256,
-      "zOrder": 35,
+      "x": 5,
+      "y": 170,
+      "zOrder": 39,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -356,12 +308,60 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Sploder",
-      "persistentUuid": "c0a84889-8590-4278-b0ab-c6cf2c3d57fa",
+      "name": "Freeze_Time",
+      "persistentUuid": "0e838949-2020-4cf0-a18c-46bdceb509ba",
       "width": 0,
-      "x": 908,
-      "y": 351,
-      "zOrder": 36,
+      "x": 399,
+      "y": 368,
+      "zOrder": 41,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Dash",
+      "persistentUuid": "c58c6f7b-1c79-4252-96e3-d11ab8c36111",
+      "width": 0,
+      "x": 365,
+      "y": 458,
+      "zOrder": 42,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Fast_shoot",
+      "persistentUuid": "d3626f3f-4348-426a-aaa3-9b1f67b15c0a",
+      "width": 0,
+      "x": 414,
+      "y": 303,
+      "zOrder": 43,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Bomb_powerup",
+      "persistentUuid": "3d43e40f-b836-475d-a290-f203df7267cd",
+      "width": 0,
+      "x": 298,
+      "y": 399,
+      "zOrder": 44,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -373,78 +373,193 @@
       "keepRatio": true,
       "layer": "",
       "name": "Slapper",
-      "persistentUuid": "705fc7f3-7b8f-48e5-8181-8445fb5c5a33",
+      "persistentUuid": "e87b5970-4bd1-4075-b538-625536579749",
       "width": 0,
-      "x": 941,
-      "y": 439,
-      "zOrder": 37,
+      "x": 640,
+      "y": 263,
+      "zOrder": 45,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Sploder",
+      "persistentUuid": "fd753c13-0d13-44b7-8d9b-1f965cf10800",
+      "width": 0,
+      "x": 760,
+      "y": 317,
+      "zOrder": 46,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Shooter",
+      "persistentUuid": "257b96db-cdbc-4630-a0e3-7471618b2784",
+      "width": 0,
+      "x": 561,
+      "y": 218,
+      "zOrder": 47,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "xlr8",
+      "persistentUuid": "0c904d97-15e5-49bb-bfa0-27500529424e",
+      "width": 0,
+      "x": 499,
+      "y": 369,
+      "zOrder": 48,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Bullet_Damage",
+      "persistentUuid": "112f21ce-689b-4f60-adcb-14726102f1d7",
+      "width": 0,
+      "x": 302,
+      "y": 311,
+      "zOrder": 49,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "bullet_damage_cooldown",
+      "persistentUuid": "23652109-6c8f-41ff-8d68-fc9783bac0fa",
+      "width": 0,
+      "x": 5,
+      "y": 195,
+      "zOrder": 50,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Multishot",
+      "persistentUuid": "9efb239c-06c4-4521-9e8b-e7c29162f771",
+      "width": 0,
+      "x": 511,
+      "y": 304,
+      "zOrder": 51,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "The_Nuclear_Option",
+      "persistentUuid": "daa12942-54b2-45b9-8928-76fbf65726e7",
+      "width": 0,
+      "x": 416,
+      "y": 228,
+      "zOrder": 52,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Slapper",
+      "persistentUuid": "702adf25-eb46-48ca-8ab9-c9bd7f25bd50",
+      "width": 0,
+      "x": 763,
+      "y": 203,
+      "zOrder": 54,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Sploder",
+      "persistentUuid": "044a3413-41d4-47ed-8236-6a3cd7790aa6",
+      "width": 0,
+      "x": 696,
+      "y": 158,
+      "zOrder": 55,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Shooter",
+      "persistentUuid": "57120793-569e-4b20-9566-025092980af1",
+      "width": 0,
+      "x": 767,
+      "y": 94,
+      "zOrder": 56,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "The_Nuclear_Option_Cooldown",
+      "persistentUuid": "e51ba5fd-853f-486e-ac7e-17bb8ef30025",
+      "width": 0,
+      "x": 5,
+      "y": 218,
+      "zOrder": 57,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     }
   ],
   "objects": [
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "BG",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "NewSprite",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "NewSprite7",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 22
-                      },
-                      {
-                        "x": 55,
-                        "y": 22
-                      },
-                      {
-                        "x": 55,
-                        "y": 55
-                      },
-                      {
-                        "x": 0,
-                        "y": 55
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "assetStoreId": "",
       "bold": false,
@@ -491,9 +606,6 @@
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
-      {
-        "objectName": "BG"
-      },
       {
         "objectName": "Test_for_powerups"
       }
@@ -544,6 +656,68 @@
               },
               "parameters": [
                 "Dash_cooldown"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "freeze_time_cooldown"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Bomb_cooldown"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "None"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "bullet_damage_cooldown"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "power_ups_owned",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "power_up_activated",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Enemy_Difficulty",
+                "=",
+                "1"
               ]
             },
             {
@@ -701,6 +875,16 @@
                 "value": "SetBooleanVariable"
               },
               "parameters": [
+                "Power_ups[\"Freeze Time\"][\"has freeze time\"]",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
                 "Power_ups[\"Freeze Time\"][\"Freeze time overclocked\"]",
                 "False",
                 "5"
@@ -748,20 +932,12 @@
             },
             {
               "type": {
-                "value": "Cache"
+                "value": "SetBooleanVariable"
               },
               "parameters": [
-                "None"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "power_ups_owned",
-                "=",
-                "0"
+                "Power_ups.Bomb.has_bomb",
+                "False",
+                ""
               ]
             },
             {
@@ -769,17 +945,9 @@
                 "value": "SetBooleanVariable"
               },
               "parameters": [
-                "power_up_activated",
+                "Power_ups.Bomb[\"bomb overclocked\"]",
                 "False",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "freeze_time_cooldown"
               ]
             },
             {
@@ -787,9 +955,209 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "Enemy_Difficulty",
+                "Power_ups.Bomb.bomb_cooldown_time",
+                "=",
+                "20"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Bomb[\"bomb overclocking\"]",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.XLR8.has_xlr8",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Power_ups.XLR8.movement_speed",
+                "=",
+                "1000"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.XLR8.xlr8_overclocked",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.XLR8.xlr8_overclocking",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Bullet_Damage.Has_Bullet_Damage",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Bullet_Damage.Bullet_Damage_Overclocked",
+                "False",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Bullet_Damage.Bullet_Damage_Overclocking",
+                "False",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Bullet_Damage.Bullet_Damage_Active",
+                "False",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Bullet_Damage.Bullet_Damage_Available",
+                "True",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Power_ups.Bullet_Damage.Bullet_Damage_Duration",
+                "=",
+                "10"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Power_ups.Bullet_Damage.Bullet_Damage_Value",
                 "=",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Multishot.has_multishot",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Multishot.multishot_overclocked",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Multishot.multishot_overclocking",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.The_Nuclear_Option.Has_Nuclear_option",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.The_Nuclear_Option.Nuclear_option_overclocked",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.The_Nuclear_Option.Nuclear_option_overclocking",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Power_ups.The_Nuclear_Option.Nuclear_option_cooldown_timer",
+                "=",
+                "20"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.The_Nuclear_Option.Nuclear_option_available",
+                "True",
+                ""
               ]
             }
           ]
@@ -861,7 +1229,7 @@
                 "Test_for_powerups",
                 "Text",
                 "=",
-                "Power_ups_grabbed[power_up_index] + \", \" + power_up_index + \", \" + ToString(VariableChildCount(Power_ups_grabbed)) + \", \" + Power_ups[\"Freeze Time\"][\"freeze time duration timer\"] + \", \" + Power_ups[\"Freeze Time\"][\"freeze time cooldown\"] + \", \" + Power_ups[\"Freeze Time\"][\"freeze time active\"] + \", \" + Power_ups[\"Freeze Time\"][\"freeze time available\"] + \", \" + power_up_activated"
+                "Power_ups_grabbed[power_up_index] + \", \" + power_up_index + \", \" + ToString(VariableChildCount(Power_ups_grabbed)) + \", \" + Power_ups.The_Nuclear_Option. Nuclear_option_cooldown + \", \" + Power_ups.The_Nuclear_Option. Nuclear_option_cooldown_timer+ \", \" + Power_ups.The_Nuclear_Option.  Nuclear_option_available + \", \" + power_up_activated"
               ]
             },
             {
@@ -903,6 +1271,57 @@
                 "Power_ups[\"Freeze Time\"][\"freeze time cooldown\"]",
                 "=",
                 "120 - trunc((TimerElapsedTime(\"freeze time cooldown timer\")))"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Power_ups.Bomb[\"bomb timer\"]",
+                "=",
+                "Power_ups.Bomb. bomb_cooldown_time - trunc((TimerElapsedTime(\"bomb cooldown timer\")))"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Bomb_cooldown",
+                "Text",
+                "=",
+                "\"Bomb cooldown: \" + Power_ups.Bomb[\"bomb timer\"]"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Power_ups.Bullet_Damage.Bullet_Damage_Duration_Timer",
+                "=",
+                "Power_ups.Bullet_Damage.Bullet_Damage_Duration - trunc((TimerElapsedTime(\"bullet damage duration timer\")))"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Power_ups.Bullet_Damage.Bullet_Damage_Cooldown",
+                "=",
+                "60 - trunc((TimerElapsedTime(\"bullet damage cooldown timer\")))"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Power_ups.The_Nuclear_Option.Nuclear_option_cooldown",
+                "=",
+                "Power_ups.The_Nuclear_Option.Nuclear_option_cooldown_timer - trunc((TimerElapsedTime(\"nuclear option cooldown timer\")))"
               ]
             }
           ],
@@ -1478,6 +1897,740 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "Bomb_powerup",
+                    "\"UI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Bomb\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "upload_timer",
+                    "=",
+                    "60 - trunc((TimerElapsedTime(\"bomb timer\") * Timer_Scale))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Upload_Timer",
+                    "Text",
+                    "=",
+                    "\"Bomb Patch Upload: \" + ToString(upload_timer)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Bomb_powerup",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.Bomb[\"bomb overclocking\"]",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Timer_Scale",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "overclocked_",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.Bomb[\"bomb overclocking\"]",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Timer_Scale",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "overclocked_"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "xlr8",
+                    "\"UI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"XLR8\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "upload_timer",
+                    "=",
+                    "60 - trunc((TimerElapsedTime(\"XLR8 timer\") * Timer_Scale))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Upload_Timer",
+                    "Text",
+                    "=",
+                    "\"XLR8 Patch Upload: \" + ToString(upload_timer)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "xlr8",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.XLR8.xlr8_overclocking",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Timer_Scale",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "overclocked_",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.XLR8.xlr8_overclocking",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Timer_Scale",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "overclocked_"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "Bullet_Damage",
+                    "\"UI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Bullet Damage\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "upload_timer",
+                    "=",
+                    "60 - trunc((TimerElapsedTime(\"Bullet Damage Timer\") * Timer_Scale))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Upload_Timer",
+                    "Text",
+                    "=",
+                    "\"Increased Bullet Damage Patch Upload: \" + ToString(upload_timer)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Bullet_Damage",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.Bullet_Damage.Bullet_Damage_Overclocking",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Timer_Scale",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "overclocked_",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.Bullet_Damage.Bullet_Damage_Overclocking",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Timer_Scale",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "overclocked_"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bullet_Damage.Bullet_Damage_Active",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "bullet_damage_cooldown",
+                    "Text",
+                    "=",
+                    "\"Increased bullet damage duration: \" + Power_ups.Bullet_Damage.Bullet_Damage_Duration_Timer"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bullet_Damage.Bullet_Damage_Active",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "bullet_damage_cooldown",
+                    "Text",
+                    "=",
+                    "\"Increased bullet damage cooldown: \" + Power_ups.Bullet_Damage.Bullet_Damage_Cooldown"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "Multishot",
+                    "\"UI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Multishot\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "upload_timer",
+                    "=",
+                    "60 - trunc((TimerElapsedTime(\"Multishot timer\") * Timer_Scale))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Upload_Timer",
+                    "Text",
+                    "=",
+                    "\"Multishot Patch Upload: \" + ToString(upload_timer)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Multishot",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.Multishot.multishot_overclocking",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Timer_Scale",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "overclocked_",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.Multishot.multishot_overclocking",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Timer_Scale",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "overclocked_"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "The_Nuclear_Option",
+                    "\"UI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"The Nuclear Option\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "upload_timer",
+                    "=",
+                    "60 - trunc((TimerElapsedTime(\"The Nuclear Option\") * Timer_Scale))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Upload_Timer",
+                    "Text",
+                    "=",
+                    "\"The Nuclear Option Patch Upload: \" + ToString(upload_timer)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "The_Nuclear_Option",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.The_Nuclear_Option.Nuclear_option_overclocking",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Timer_Scale",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "overclocked_",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.The_Nuclear_Option.Nuclear_option_overclocking",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Timer_Scale",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "overclocked_"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.The_Nuclear_Option.Nuclear_option_cooldown",
+                    ">=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "The_Nuclear_Option_Cooldown",
+                    "Text",
+                    "=",
+                    "\"The Nuclear Option Cooldown: \" + Power_ups.The_Nuclear_Option.Nuclear_option_cooldown"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ]
         },
@@ -1503,7 +2656,7 @@
                 "Player",
                 "TopDownMovement",
                 "=",
-                "1000"
+                "Power_ups.XLR8.movement_speed"
               ]
             }
           ]
@@ -1530,7 +2683,7 @@
                 "Player",
                 "TopDownMovement",
                 "=",
-                "1000"
+                "Power_ups.XLR8.movement_speed"
               ]
             }
           ]
@@ -1557,7 +2710,7 @@
                 "Player",
                 "TopDownMovement",
                 "=",
-                "-1000"
+                "Power_ups.XLR8.movement_speed * -1"
               ]
             }
           ]
@@ -1584,7 +2737,7 @@
                 "Player",
                 "TopDownMovement",
                 "=",
-                "-1000"
+                "Power_ups.XLR8.movement_speed * -1"
               ]
             }
           ]
@@ -1681,6 +2834,16 @@
             },
             {
               "type": {
+                "inverted": true,
+                "value": "VariableChildExists2"
+              },
+              "parameters": [
+                "Power_ups_grabbed",
+                "\"Bounce\""
+              ]
+            },
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
@@ -1698,23 +2861,23 @@
             },
             {
               "type": {
-                "value": "ChangeLayer"
+                "value": "Delete"
               },
               "parameters": [
                 "Bounce",
-                "\"UI\""
+                ""
               ]
             },
             {
               "type": {
-                "value": "MettreXY"
+                "value": "Create"
               },
               "parameters": [
+                "",
                 "Bounce",
-                "=",
                 "1150",
-                "=",
-                "50"
+                "50",
+                "\"UI\""
               ]
             },
             {
@@ -1772,6 +2935,16 @@
             },
             {
               "type": {
+                "inverted": true,
+                "value": "VariableChildExists2"
+              },
+              "parameters": [
+                "Power_ups_grabbed",
+                "\"Bullet Speed\""
+              ]
+            },
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
@@ -1789,23 +2962,23 @@
             },
             {
               "type": {
-                "value": "ChangeLayer"
+                "value": "Delete"
               },
               "parameters": [
                 "Fast_shoot",
-                "\"UI\""
+                ""
               ]
             },
             {
               "type": {
-                "value": "MettreXY"
+                "value": "Create"
               },
               "parameters": [
+                "",
                 "Fast_shoot",
-                "=",
                 "1150",
-                "=",
-                "50"
+                "50",
+                "\"UI\""
               ]
             },
             {
@@ -1863,6 +3036,16 @@
             },
             {
               "type": {
+                "inverted": true,
+                "value": "VariableChildExists2"
+              },
+              "parameters": [
+                "Power_ups_grabbed",
+                "\"Dash\""
+              ]
+            },
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
@@ -1880,23 +3063,23 @@
             },
             {
               "type": {
-                "value": "ChangeLayer"
+                "value": "Delete"
               },
               "parameters": [
                 "Dash",
-                "\"UI\""
+                ""
               ]
             },
             {
               "type": {
-                "value": "MettreXY"
+                "value": "Create"
               },
               "parameters": [
+                "",
                 "Dash",
-                "=",
                 "1150",
-                "=",
-                "50"
+                "50",
+                "\"UI\""
               ]
             },
             {
@@ -1954,6 +3137,16 @@
             },
             {
               "type": {
+                "inverted": true,
+                "value": "VariableChildExists2"
+              },
+              "parameters": [
+                "Power_ups_grabbed",
+                "\"Freeze Time\""
+              ]
+            },
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
@@ -1971,23 +3164,23 @@
             },
             {
               "type": {
-                "value": "ChangeLayer"
+                "value": "Delete"
               },
               "parameters": [
                 "Freeze_Time",
-                "\"UI\""
+                ""
               ]
             },
             {
               "type": {
-                "value": "MettreXY"
+                "value": "Create"
               },
               "parameters": [
+                "",
                 "Freeze_Time",
-                "=",
                 "1150",
-                "=",
-                "50"
+                "50",
+                "\"UI\""
               ]
             },
             {
@@ -2024,6 +3217,511 @@
               "parameters": [
                 "",
                 "\"freeze time timer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Bomb_powerup",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "VariableChildExists2"
+              },
+              "parameters": [
+                "Power_ups_grabbed",
+                "\"Bomb\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PushString"
+              },
+              "parameters": [
+                "Power_ups_grabbed",
+                "\"Bomb\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Bomb_powerup",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Bomb_powerup",
+                "1150",
+                "50",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Bomb_powerup"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "power_ups_owned",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"bomb timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"bomb timer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "xlr8",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "VariableChildExists2"
+              },
+              "parameters": [
+                "Power_ups_grabbed",
+                "\"XLR8\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PushString"
+              },
+              "parameters": [
+                "Power_ups_grabbed",
+                "\"XLR8\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "xlr8",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "xlr8",
+                "1150",
+                "50",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "xlr8"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "power_ups_owned",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"XLR8 timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"XLR8 timer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Bullet_Damage",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "VariableChildExists2"
+              },
+              "parameters": [
+                "Power_ups_grabbed",
+                "\"Bullet Damage\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PushString"
+              },
+              "parameters": [
+                "Power_ups_grabbed",
+                "\"Bullet Damage\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Bullet_Damage",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Bullet_Damage",
+                "1150",
+                "50",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Bullet_Damage"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "power_ups_owned",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"Bullet Damage Timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"Bullet Damage Timer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Multishot",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "VariableChildExists2"
+              },
+              "parameters": [
+                "Power_ups_grabbed",
+                "\"Multishot\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PushString"
+              },
+              "parameters": [
+                "Power_ups_grabbed",
+                "\"Multishot\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Multishot",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Multishot",
+                "1150",
+                "50",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Multishot"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "power_ups_owned",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"Multishot timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"Multishot timer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "The_Nuclear_Option",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "VariableChildExists2"
+              },
+              "parameters": [
+                "Power_ups_grabbed",
+                "\"The Nuclear Option\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PushString"
+              },
+              "parameters": [
+                "Power_ups_grabbed",
+                "\"The Nuclear Option\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "The_Nuclear_Option",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "The_Nuclear_Option",
+                "1150",
+                "50",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "The_Nuclear_Option"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "power_ups_owned",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"The Nuclear Option\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"The Nuclear Option\""
               ]
             }
           ]
@@ -2244,16 +3942,10 @@
                     "value": "BooleanVariable"
                   },
                   "parameters": [
-                    "Power_ups.Dash[\"Dash overclocking\"]",
+                    "Power_ups[\"Freeze Time\"][\"Freeze time overclocking\"]",
                     "=",
                     ""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
                 },
                 {
                   "type": {
@@ -2264,6 +3956,12 @@
                     "=",
                     "\"Freeze Time\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -2273,6 +3971,286 @@
                   },
                   "parameters": [
                     "Power_ups[\"Freeze Time\"][\"freeze time overclocking\"]",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    "5",
+                    "no",
+                    "no",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bomb[\"bomb overclocking\"]",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Bomb\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bomb[\"bomb overclocking\"]",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    "5",
+                    "no",
+                    "no",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.XLR8.xlr8_overclocking",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"XLR8\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.XLR8.xlr8_overclocking",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    "5",
+                    "no",
+                    "no",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bullet_Damage.Bullet_Damage_Overclocking",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Bullet Damage\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bullet_Damage.Bullet_Damage_Overclocking",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    "5",
+                    "no",
+                    "no",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Multishot.multishot_overclocking",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Multishot\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Multishot.multishot_overclocking",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    "5",
+                    "no",
+                    "no",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.The_Nuclear_Option.Nuclear_option_overclocking",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"The Nuclear Option\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.The_Nuclear_Option.Nuclear_option_overclocking",
                     "True",
                     ""
                   ]
@@ -2520,6 +4498,236 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Bomb\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bomb[\"bomb overclocked\"]",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bomb[\"bomb overclocking\"]",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"bomb timer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"XLR8\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.XLR8.xlr8_overclocked",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.XLR8.xlr8_overclocking",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"XLR8 timer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Bullet Damage\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bullet_Damage.Bullet_Damage_Overclocked",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bullet_Damage.Bullet_Damage_Overclocked",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Bullet Damage Timer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Multishot\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Multishot.multishot_overclocked",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Multishot.multishot_overclocking",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Multishot timer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"The Nuclear Option\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.The_Nuclear_Option.Nuclear_option_overclocked",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.The_Nuclear_Option.Nuclear_option_overclocking",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"The Nuclear Option\""
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -2586,6 +4794,18 @@
               "actions": [
                 {
                   "type": {
+                    "value": "Health::Health::SetChanceToDodgeOp"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    "=",
+                    "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "AddForceVersPos"
                   },
                   "parameters": [
@@ -2610,6 +4830,18 @@
                   },
                   "parameters": [
                     "Player"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::SetChanceToDodgeOp"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    "=",
+                    "0",
+                    ""
                   ]
                 },
                 {
@@ -3060,6 +5292,511 @@
                     ""
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Power_ups_grabbed[power_up_index]",
+                "=",
+                "\"Bomb\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "power_up_activated",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Visible"
+              },
+              "parameters": [
+                "Bomb_cooldown"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "bomb",
+                "Player.PointX(\"Player_x\")",
+                "Player.PointY(\"Player_y\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::FireTowardObject"
+              },
+              "parameters": [
+                "bomb",
+                "FireBullet",
+                "bomb.PointX(\"bombx\")",
+                "bomb.PointY(\"bomby\")",
+                "Bullet",
+                "Player",
+                "Bullet_speed",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "bomb",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"bomb cooldown timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Bomb_cooldown",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Power_ups.Bomb[\"bomb timer\"]",
+                "<=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Bomb_cooldown"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Bullet_Damage.Bullet_Damage_Active",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Bullet_Damage.Bullet_Damage_Available",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"bullet damage duration timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "bullet_damage_cooldown",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Power_ups.Bullet_Damage.Bullet_Damage_Value",
+                "=",
+                "3"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Power_ups.Bullet_Damage.Bullet_Damage_Duration_Timer",
+                "<=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"bullet damage cooldown timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Bullet_Damage.Bullet_Damage_Active",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Bullet_Damage.Bullet_Damage_Available",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Power_ups.Bullet_Damage.Bullet_Damage_Value",
+                "=",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Power_ups.Bullet_Damage.Bullet_Damage_Cooldown",
+                "<=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Power_ups.Bullet_Damage.Bullet_Damage_Duration_Timer",
+                "<",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Bullet_Damage.Bullet_Damage_Active",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Bullet_Damage.Bullet_Damage_Available",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "bullet_damage_cooldown"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Bullet Damage\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "Bullet_Damage"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "power_up_activated",
+                    "False",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "power_up_activated",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.The_Nuclear_Option.Nuclear_option_available",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.The_Nuclear_Option.Has_Nuclear_option",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Shooter",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Slapper",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Sploder",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "power_up_activated",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.The_Nuclear_Option.Nuclear_option_available",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "The_Nuclear_Option_Cooldown",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"nuclear option cooldown timer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Power_ups.The_Nuclear_Option.Nuclear_option_cooldown",
+                "<=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.The_Nuclear_Option.Nuclear_option_available",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "The_Nuclear_Option_Cooldown"
               ]
             }
           ]
@@ -3798,6 +6535,887 @@
           "conditions": [
             {
               "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Bomb.has_bomb",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Power_ups_grabbed[power_up_index]",
+                "=",
+                "\"Bomb\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Bomb_powerup",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bomb[\"bomb overclocked\"]",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"bomb timer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Upload_Timer"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "power_up_activated",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.Bomb.bomb_cooldown_time",
+                        "=",
+                        "5"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bomb[\"bomb overclocked\"]",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Upload_Timer",
+                    "Text"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "UnPauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"bomb timer\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "power_up_activated",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.Bomb.bomb_cooldown_time",
+                        "=",
+                        "20"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.XLR8.has_xlr8",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Power_ups_grabbed[power_up_index]",
+                "=",
+                "\"XLR8\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "xlr8",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.XLR8.xlr8_overclocked",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"XLR8 timer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Upload_Timer"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "power_up_activated",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.XLR8.movement_speed",
+                        "=",
+                        "2000"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.XLR8.xlr8_overclocked",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Upload_Timer",
+                    "Text"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "UnPauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"XLR8 timer\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "power_up_activated",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.XLR8.movement_speed",
+                        "=",
+                        "1500"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Bullet_Damage.Has_Bullet_Damage",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Power_ups_grabbed[power_up_index]",
+                "=",
+                "\"Bullet Damage\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Bullet_Damage",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bullet_Damage.Bullet_Damage_Overclocked",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Bullet Damage Timer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Upload_Timer"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "power_up_activated",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.Bullet_Damage.Bullet_Damage_Duration",
+                        "=",
+                        "20"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bullet_Damage.Bullet_Damage_Overclocked",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Upload_Timer",
+                    "Text"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "UnPauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Bullet Damage Timer\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "power_up_activated",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.Bullet_Damage.Bullet_Damage_Duration",
+                        "=",
+                        "10"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bullet_Damage.Bullet_Damage_Active",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bullet_Damage.Bullet_Damage_Available",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "power_up_activated",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bullet_Damage.Bullet_Damage_Active",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.Multishot.has_multishot",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Power_ups_grabbed[power_up_index]",
+                "=",
+                "\"Multishot\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Multishot",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Multishot.multishot_overclocked",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Multishot timer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Upload_Timer"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "power_up_activated",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FireBullet::FireBullet::SetBulletQuantityOp"
+                      },
+                      "parameters": [
+                        "Player",
+                        "FireBullet",
+                        "=",
+                        "5",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Multishot.multishot_overclocked",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Upload_Timer",
+                    "Text"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "UnPauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Multishot timer\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "power_up_activated",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FireBullet::FireBullet::SetBulletQuantityOp"
+                      },
+                      "parameters": [
+                        "Player",
+                        "FireBullet",
+                        "=",
+                        "3",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Power_ups.The_Nuclear_Option.Has_Nuclear_option",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "Power_ups_grabbed[power_up_index]",
+                "=",
+                "\"The Nuclear Option\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "The_Nuclear_Option",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.The_Nuclear_Option.Nuclear_option_overclocked",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"The Nuclear Option\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Upload_Timer"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "power_up_activated",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.The_Nuclear_Option.Nuclear_option_cooldown_timer",
+                        "=",
+                        "20"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.The_Nuclear_Option.Nuclear_option_overclocked",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Upload_Timer",
+                    "Text"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "UnPauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"The Nuclear Option\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "power_up_activated",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Power_ups.The_Nuclear_Option.Nuclear_option_cooldown_timer",
+                        "=",
+                        "20"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "KeyPressed"
               },
               "parameters": [
@@ -4272,6 +7890,513 @@
                   },
                   "parameters": [
                     "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Bomb\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bomb.has_bomb",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Bomb_powerup",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "None"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "!=",
+                    "\"Bomb\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "Bomb_powerup",
+                    "\"UI\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bomb.has_bomb",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Bomb_powerup"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"bomb timer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"XLR8\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.XLR8.has_xlr8",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "xlr8",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "None"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "!=",
+                    "\"XLR8\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "xlr8",
+                    "\"UI\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.XLR8.has_xlr8",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.XLR8.movement_speed",
+                    "=",
+                    "1000"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "xlr8"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"XLR8 timer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Bullet Damage\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bullet_Damage.Has_Bullet_Damage",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Bullet_Damage",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "None"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "!=",
+                    "\"Bullet Damage\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "Bullet_Damage",
+                    "\"UI\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Bullet_Damage.Has_Bullet_Damage",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Bullet_Damage"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Bullet Damage Timer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"Multishot\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Multishot.has_multishot",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Multishot",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "None"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "!=",
+                    "\"Multishot\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "Multishot",
+                    "\"UI\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.Multishot.has_multishot",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Multishot"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Multishot timer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::SetBulletQuantityOp"
+                  },
+                  "parameters": [
+                    "Player",
+                    "FireBullet",
+                    "=",
+                    "1",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "=",
+                    "\"The Nuclear Option\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.The_Nuclear_Option.Has_Nuclear_option",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "The_Nuclear_Option",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "None"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "!=",
+                    "\"The Nuclear Option\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "The_Nuclear_Option",
+                    "\"UI\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Power_ups.The_Nuclear_Option.Has_Nuclear_option",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "The_Nuclear_Option"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"The Nuclear Option\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
                     "!=",
                     "\"Bullet Speed\""
                   ]
@@ -4304,6 +8429,56 @@
                     "Power_ups_grabbed[power_up_index]",
                     "!=",
                     "\"Freeze Time\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "!=",
+                    "\"Bomb\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "!=",
+                    "\"XLR8\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "!=",
+                    "\"Bullet Damage\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "!=",
+                    "\"Multishot\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "Power_ups_grabbed[power_up_index]",
+                    "!=",
+                    "\"The Nuclear Option\""
                   ]
                 }
               ],
@@ -4548,6 +8723,18 @@
                 "Splode_speed",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "AdvancedProjectile::AdvancedProjectile::SetMaxLifetime"
+              },
+              "parameters": [
+                "Evil_Bullet",
+                "AdvancedProjectile",
+                "=",
+                "30",
+                ""
+              ]
             }
           ]
         },
@@ -4589,7 +8776,7 @@
                   "parameters": [
                     "Shooter",
                     "Health",
-                    "1",
+                    "1 * Power_ups.Bullet_Damage.Bullet_Damage_Value",
                     "no",
                     "no",
                     ""
@@ -4638,7 +8825,7 @@
                   "parameters": [
                     "Slapper",
                     "Health",
-                    "1",
+                    "1 * Power_ups.Bullet_Damage.Bullet_Damage_Value",
                     "no",
                     "no",
                     ""
@@ -4687,7 +8874,7 @@
                   "parameters": [
                     "Sploder",
                     "Health",
-                    "1",
+                    "1 * Power_ups.Bullet_Damage.Bullet_Damage_Value",
                     "no",
                     "no",
                     ""

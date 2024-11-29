@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 217,
+    "build": 218,
     "major": 5,
     "minor": 4,
     "revision": 0
@@ -284,6 +284,60 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite17",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bomb_lol.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Bomb_lol",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite18.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite18",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite19.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite19",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite20.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite20",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite21.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite21",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite22.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite22",
         "smoothed": true,
         "userAdded": false
       }
@@ -1125,13 +1179,13 @@
         {
           "name": "AdvancedProjectile",
           "type": "AdvancedProjectile::AdvancedProjectile",
-          "MaxLifetime": 0,
+          "MaxLifetime": 30,
           "MaxDistanceFromStartingPosition": 0,
           "MaxSpeed": 0,
           "MinSpeed": 0,
           "Acceleration": 0,
           "StartingSpeed": 0,
-          "DeleteWhenLifetimeExceeded": false,
+          "DeleteWhenLifetimeExceeded": true,
           "DeleteWhenDistanceExceeded": false
         }
       ],
@@ -1733,6 +1787,602 @@
         "characterSize": 20,
         "color": "0;0;0"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Bomb_powerup",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Bomb_lol",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bomb_lol",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 12
+                      },
+                      {
+                        "x": 58,
+                        "y": 12
+                      },
+                      {
+                        "x": 58,
+                        "y": 53
+                      },
+                      {
+                        "x": 6,
+                        "y": 53
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "bomb",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "AdvancedProjectile",
+          "type": "AdvancedProjectile::AdvancedProjectile",
+          "MaxLifetime": 0,
+          "MaxDistanceFromStartingPosition": 0,
+          "MaxSpeed": 0,
+          "MinSpeed": 0,
+          "Acceleration": 0,
+          "StartingSpeed": 0,
+          "DeleteWhenLifetimeExceeded": true,
+          "DeleteWhenDistanceExceeded": false
+        },
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.1,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 360,
+          "BulletQuantity": 180,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 1,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 1,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": false,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": false,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite18",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 17,
+                        "y": 6
+                      },
+                      {
+                        "x": 57,
+                        "y": 6
+                      },
+                      {
+                        "x": 57,
+                        "y": 48
+                      },
+                      {
+                        "x": 17,
+                        "y": 48
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Bomb_cooldown",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "xlr8",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite19",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12,
+                        "y": 17
+                      },
+                      {
+                        "x": 55,
+                        "y": 17
+                      },
+                      {
+                        "x": 55,
+                        "y": 51
+                      },
+                      {
+                        "x": 12,
+                        "y": 51
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Bullet_Damage",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite20",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 10,
+                        "y": 16
+                      },
+                      {
+                        "x": 55,
+                        "y": 16
+                      },
+                      {
+                        "x": 55,
+                        "y": 50
+                      },
+                      {
+                        "x": 10,
+                        "y": 50
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "bullet_damage_cooldown",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Multishot",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite21",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 10,
+                        "y": 15
+                      },
+                      {
+                        "x": 58,
+                        "y": 15
+                      },
+                      {
+                        "x": 58,
+                        "y": 48
+                      },
+                      {
+                        "x": 10,
+                        "y": 48
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "The_Nuclear_Option",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite22",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 13,
+                        "y": 12
+                      },
+                      {
+                        "x": 55,
+                        "y": 12
+                      },
+                      {
+                        "x": 55,
+                        "y": 52
+                      },
+                      {
+                        "x": 13,
+                        "y": 52
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "BG",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite7",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 22
+                      },
+                      {
+                        "x": 55,
+                        "y": 22
+                      },
+                      {
+                        "x": 55,
+                        "y": 55
+                      },
+                      {
+                        "x": 0,
+                        "y": 55
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "The_Nuclear_Option_Cooldown",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1793,10 +2443,40 @@
         "objectName": "Freeze_Time"
       },
       {
+        "objectName": "Bomb_powerup"
+      },
+      {
+        "objectName": "bomb"
+      },
+      {
         "objectName": "Dash_cooldown"
       },
       {
         "objectName": "freeze_time_cooldown"
+      },
+      {
+        "objectName": "Bomb_cooldown"
+      },
+      {
+        "objectName": "xlr8"
+      },
+      {
+        "objectName": "Bullet_Damage"
+      },
+      {
+        "objectName": "bullet_damage_cooldown"
+      },
+      {
+        "objectName": "Multishot"
+      },
+      {
+        "objectName": "The_Nuclear_Option"
+      },
+      {
+        "objectName": "The_Nuclear_Option_Cooldown"
+      },
+      {
+        "objectName": "BG"
       }
     ]
   },
@@ -1832,6 +2512,37 @@
       "type": "structure",
       "children": [
         {
+          "name": "Bomb",
+          "type": "structure",
+          "children": [
+            {
+              "name": "bomb overclocked",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "bomb overclocking",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "bomb timer",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "bomb_cooldown_time",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "has_bomb",
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        },
+        {
           "name": "Bounce",
           "type": "structure",
           "children": [
@@ -1854,6 +2565,57 @@
               "name": "times_bounced_allowed",
               "type": "number",
               "value": 0
+            }
+          ]
+        },
+        {
+          "name": "Bullet_Damage",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Bullet_Damage_Active",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Bullet_Damage_Available",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Bullet_Damage_Cooldown",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Bullet_Damage_Duration",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Bullet_Damage_Duration_Timer",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Bullet_Damage_Overclocked",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Bullet_Damage_Overclocking",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Bullet_Damage_Value",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Has_Bullet_Damage",
+              "type": "boolean",
+              "value": false
             }
           ]
         },
@@ -1950,6 +2712,89 @@
             },
             {
               "name": "has freeze time",
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "Multishot",
+          "type": "structure",
+          "children": [
+            {
+              "name": "has_multishot",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "multishot_overclocked",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "multishot_overclocking",
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "The_Nuclear_Option",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Has_Nuclear_option",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Nuclear_option_available",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Nuclear_option_cooldown",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Nuclear_option_cooldown_timer",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Nuclear_option_overclocked",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Nuclear_option_overclocking",
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "XLR8",
+          "type": "structure",
+          "children": [
+            {
+              "name": "has_xlr8",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "movement_speed",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "xlr8_overclocked",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "xlr8_overclocking",
               "type": "boolean",
               "value": false
             }
