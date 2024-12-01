@@ -340,6 +340,672 @@
         "name": "NewSprite22",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/charIdle/playerCharIdleL(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\charIdle\\playerCharIdleL(1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/charIdle/playerCharIdleL.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\charIdle\\playerCharIdleL.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/charIdle/playerCharIdleR(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\charIdle\\playerCharIdleR(1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/charIdle/playerCharIdleR.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\charIdle\\playerCharIdleR.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/charAnim/playerCharAnimL(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\charAnim\\playerCharAnimL(1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/charAnim/playerCharAnimL(2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\charAnim\\playerCharAnimL(2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/charAnim/playerCharAnimL.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\charAnim\\playerCharAnimL.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/charAnim/playerCharAnimR(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\charAnim\\playerCharAnimR(1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/charAnim/playerCharAnimR(2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\charAnim\\playerCharAnimR(2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/charAnim/playerCharAnimR.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\charAnim\\playerCharAnimR.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchvelocityframes/patchvelocity(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchvelocityframes\\patchvelocity(1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchvelocityframes/patchvelocity(2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchvelocityframes\\patchvelocity(2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchvelocityframes/patchvelocity.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchvelocityframes\\patchvelocity.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchbounceframes/patchbounce(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchbounceframes\\patchbounce(1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchbounceframes/patchbounce(2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchbounceframes\\patchbounce(2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchbounceframes/patchbounce.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchbounceframes\\patchbounce.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy2frames/enemy2L(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy2frames\\enemy2L(1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy2frames/enemy2L(2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy2frames\\enemy2L(2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy2frames/enemy2L.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy2frames\\enemy2L.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy2frames/enemy2R(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy2frames\\enemy2R(1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy2frames/enemy2R(2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy2frames\\enemy2R(2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy2frames/enemy2R.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy2frames\\enemy2R.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy3frames/enemy3L(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy3frames\\enemy3L(1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy3frames/enemy3L(2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy3frames\\enemy3L(2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy3frames/enemy3L.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy3frames\\enemy3L.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy3frames/enemy3R(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy3frames\\enemy3R(1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy3frames/enemy3R(2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy3frames\\enemy3R(2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy3frames/enemy3R.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy3frames\\enemy3R.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy1frames/enemy1L(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy1frames\\enemy1L(1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy1frames/enemy1L(2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy1frames\\enemy1L(2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy1frames/enemy1L.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy1frames\\enemy1L.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy1frames/enemy1R(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy1frames\\enemy1R(1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy1frames/enemy1R(2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy1frames\\enemy1R(2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy1frames/enemy1R.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy1frames\\enemy1R.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchdashframes/patchdash(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchdashframes\\patchdash(1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchdashframes/patchdash(2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchdashframes\\patchdash(2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchdashframes/patchdash.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchdashframes\\patchdash.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchfreezeframes/patchfreeze1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchfreezeframes\\patchfreeze1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchfreezeframes/patchfreeze2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchfreezeframes\\patchfreeze2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchfreezeframes/patchfreeze3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchfreezeframes\\patchfreeze3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchbombframes/patchbomb(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchbombframes\\patchbomb(1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchbombframes/patchbomb(2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchbombframes\\patchbomb(2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchbombframes/patchbomb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchbombframes\\patchbomb.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/bombcountdownframes/bombexploding(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\bombcountdownframes\\bombexploding(1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/bombcountdownframes/bombexploding(2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\bombcountdownframes\\bombexploding(2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/bombcountdownframes/bombexploding(3).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\bombcountdownframes\\bombexploding(3).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/bombcountdownframes/bombexploding.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\bombcountdownframes\\bombexploding.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchspeedframes/patchspeed1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchspeedframes\\patchspeed1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchspeedframes/patchspeed2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchspeedframes\\patchspeed2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchspeedframes/patchspeed3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchspeedframes\\patchspeed3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchdmgframes/patchdmg1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchdmgframes\\patchdmg1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchdmgframes/patchdmg2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchdmgframes\\patchdmg2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchdmgframes/patchdmg3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchdmgframes\\patchdmg3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchmultframes/patchmult(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchmultframes\\patchmult(1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchmultframes/patchmult(2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchmultframes\\patchmult(2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchmultframes/patchmult.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchmultframes\\patchmult.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchwipeframes/patchroomwipe(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchwipeframes\\patchroomwipe(1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchwipeframes/patchroomwipe(2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchwipeframes\\patchroomwipe(2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/patchwipeframes/patchroomwipe.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\patchwipeframes\\patchroomwipe.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy2frames/enemy2prjctl(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy2frames\\enemy2prjctl(1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy2frames/enemy2prjctl.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy2frames\\enemy2prjctl.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/projectileframes/projectile(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\projectileframes\\projectile(1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/projectileframes/projectile.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\projectileframes\\projectile.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy1frames/enemy1explode(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy1frames\\enemy1explode(1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy1frames/enemy1explode(2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy1frames\\enemy1explode(2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy1frames/enemy1explode.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy1frames\\enemy1explode.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/floortile.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\floortile.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/obstaclewalltile.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\obstaclewalltile.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/explosionframes/bombexplosion(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\explosionframes\\bombexplosion(1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/explosionframes/bombexplosion(2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\explosionframes\\bombexplosion(2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/explosionframes/bombexplosion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\explosionframes\\bombexplosion.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_floortile.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "assets\\floortile.png2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_obstaclewalltile.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "assets\\obstaclewalltile.png2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_floortile.png2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\assets_floortile.png2.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -459,17 +1125,17 @@
       ],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "charIdleL",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.5,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite",
+                  "image": "assets\\charIdle\\playerCharIdleL(1).png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -485,20 +1151,452 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 9,
-                        "y": 14
+                        "x": 120,
+                        "y": 48
                       },
                       {
-                        "x": 53,
-                        "y": 14
+                        "x": 392,
+                        "y": 48
                       },
                       {
-                        "x": 53,
-                        "y": 59
+                        "x": 392,
+                        "y": 496
                       },
                       {
-                        "x": 9,
-                        "y": 59
+                        "x": 120,
+                        "y": 496
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\charIdle\\playerCharIdleL.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 120,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 496
+                      },
+                      {
+                        "x": 120,
+                        "y": 496
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "charIdleR",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.5,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\charIdle\\playerCharIdleR(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 120,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 496
+                      },
+                      {
+                        "x": 120,
+                        "y": 496
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\charIdle\\playerCharIdleR.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 120,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 496
+                      },
+                      {
+                        "x": 120,
+                        "y": 496
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "charMoveL",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.2,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\charAnim\\playerCharAnimL(2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 120,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 496
+                      },
+                      {
+                        "x": 120,
+                        "y": 496
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\charAnim\\playerCharAnimL(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 120,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 496
+                      },
+                      {
+                        "x": 120,
+                        "y": 496
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\charAnim\\playerCharAnimL(2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 120,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 496
+                      },
+                      {
+                        "x": 120,
+                        "y": 496
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\charAnim\\playerCharAnimL.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 120,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 496
+                      },
+                      {
+                        "x": 120,
+                        "y": 496
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "charMoveR",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.2,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\charAnim\\playerCharAnimR.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 120,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 496
+                      },
+                      {
+                        "x": 120,
+                        "y": 496
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\charAnim\\playerCharAnimR(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 120,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 496
+                      },
+                      {
+                        "x": 120,
+                        "y": 496
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\charAnim\\playerCharAnimR.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 120,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 496
+                      },
+                      {
+                        "x": 120,
+                        "y": 496
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\charAnim\\playerCharAnimR(2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 120,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 48
+                      },
+                      {
+                        "x": 392,
+                        "y": 496
+                      },
+                      {
+                        "x": 120,
+                        "y": 496
                       }
                     ]
                   ]
@@ -774,6 +1872,7 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Fast_shoot",
+      "preScale": 0.2,
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -781,17 +1880,17 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "velocityPatchAnim",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.5,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite8",
+                  "image": "assets\\patchvelocityframes\\patchvelocity(1).png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -807,20 +1906,128 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 5,
-                        "y": 7
+                        "x": 16,
+                        "y": 32
                       },
                       {
-                        "x": 57,
-                        "y": 7
+                        "x": 480,
+                        "y": 32
                       },
                       {
-                        "x": 57,
-                        "y": 47
+                        "x": 480,
+                        "y": 488
                       },
                       {
-                        "x": 5,
-                        "y": 47
+                        "x": 16,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchvelocityframes\\patchvelocity.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 488
+                      },
+                      {
+                        "x": 16,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchvelocityframes\\patchvelocity(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 488
+                      },
+                      {
+                        "x": 16,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchvelocityframes\\patchvelocity(2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 488
+                      },
+                      {
+                        "x": 16,
+                        "y": 488
                       }
                     ]
                   ]
@@ -835,6 +2042,7 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Bounce",
+      "preScale": 0.2,
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -842,17 +2050,17 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "bouncePatchAnim",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.5,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite9",
+                  "image": "assets\\patchbounceframes\\patchbounce(2).png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -868,20 +2076,128 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 10,
-                        "y": 14
-                      },
-                      {
-                        "x": 59,
-                        "y": 14
-                      },
-                      {
-                        "x": 59,
+                        "x": 72,
                         "y": 56
                       },
                       {
-                        "x": 10,
+                        "x": 448,
                         "y": 56
+                      },
+                      {
+                        "x": 448,
+                        "y": 464
+                      },
+                      {
+                        "x": 72,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchbounceframes\\patchbounce(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 72,
+                        "y": 56
+                      },
+                      {
+                        "x": 448,
+                        "y": 56
+                      },
+                      {
+                        "x": 448,
+                        "y": 464
+                      },
+                      {
+                        "x": 72,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchbounceframes\\patchbounce(2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 72,
+                        "y": 56
+                      },
+                      {
+                        "x": 448,
+                        "y": 56
+                      },
+                      {
+                        "x": 448,
+                        "y": 464
+                      },
+                      {
+                        "x": 72,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchbounceframes\\patchbounce.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 72,
+                        "y": 56
+                      },
+                      {
+                        "x": 448,
+                        "y": 56
+                      },
+                      {
+                        "x": 448,
+                        "y": 464
+                      },
+                      {
+                        "x": 72,
+                        "y": 464
                       }
                     ]
                   ]
@@ -938,6 +2254,7 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Bullet",
+      "preScale": 0.2,
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
@@ -974,17 +2291,17 @@
       ],
       "animations": [
         {
-          "name": "NewSprite2",
+          "name": "playerBullet",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.2,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite3",
+                  "image": "assets\\projectileframes\\projectile.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1000,20 +2317,56 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 18,
-                        "y": 23
+                        "x": 64,
+                        "y": 16
                       },
                       {
-                        "x": 42,
-                        "y": 23
+                        "x": 448,
+                        "y": 16
                       },
                       {
-                        "x": 42,
-                        "y": 47
+                        "x": 448,
+                        "y": 496
                       },
                       {
-                        "x": 18,
-                        "y": 47
+                        "x": 64,
+                        "y": 496
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\projectileframes\\projectile(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 64,
+                        "y": 16
+                      },
+                      {
+                        "x": 448,
+                        "y": 16
+                      },
+                      {
+                        "x": 448,
+                        "y": 496
+                      },
+                      {
+                        "x": 64,
+                        "y": 496
                       }
                     ]
                   ]
@@ -1044,7 +2397,7 @@
           "type": "FireBullet::FireBullet",
           "FireCooldown": 0.1,
           "HasJustFired": false,
-          "RotateBullet": true,
+          "RotateBullet": false,
           "FiringArc": 45,
           "BulletQuantity": 1,
           "AngleVariance": 0,
@@ -1117,17 +2470,17 @@
       ],
       "animations": [
         {
-          "name": "NewSprite2",
+          "name": "enemyRangedL",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.2,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite10",
+                  "image": "assets\\enemy2frames\\enemy2L(1).png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1143,20 +2496,284 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 10,
-                        "y": 15
+                        "x": 16,
+                        "y": 136
                       },
                       {
-                        "x": 64,
-                        "y": 15
+                        "x": 504,
+                        "y": 136
                       },
                       {
-                        "x": 64,
-                        "y": 58
+                        "x": 504,
+                        "y": 440
                       },
                       {
-                        "x": 10,
-                        "y": 58
+                        "x": 16,
+                        "y": 440
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy2frames\\enemy2L(2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 136
+                      },
+                      {
+                        "x": 504,
+                        "y": 136
+                      },
+                      {
+                        "x": 504,
+                        "y": 440
+                      },
+                      {
+                        "x": 16,
+                        "y": 440
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy2frames\\enemy2L(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 136
+                      },
+                      {
+                        "x": 504,
+                        "y": 136
+                      },
+                      {
+                        "x": 504,
+                        "y": 440
+                      },
+                      {
+                        "x": 16,
+                        "y": 440
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy2frames\\enemy2L.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 136
+                      },
+                      {
+                        "x": 504,
+                        "y": 136
+                      },
+                      {
+                        "x": 504,
+                        "y": 440
+                      },
+                      {
+                        "x": 16,
+                        "y": 440
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "enemyRangedR",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.2,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy2frames\\enemy2R(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 136
+                      },
+                      {
+                        "x": 504,
+                        "y": 136
+                      },
+                      {
+                        "x": 504,
+                        "y": 440
+                      },
+                      {
+                        "x": 16,
+                        "y": 440
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy2frames\\enemy2R(2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 136
+                      },
+                      {
+                        "x": 504,
+                        "y": 136
+                      },
+                      {
+                        "x": 504,
+                        "y": 440
+                      },
+                      {
+                        "x": 16,
+                        "y": 440
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy2frames\\enemy2R(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 136
+                      },
+                      {
+                        "x": 504,
+                        "y": 136
+                      },
+                      {
+                        "x": 504,
+                        "y": 440
+                      },
+                      {
+                        "x": 16,
+                        "y": 440
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy2frames\\enemy2R.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 136
+                      },
+                      {
+                        "x": 504,
+                        "y": 136
+                      },
+                      {
+                        "x": 504,
+                        "y": 440
+                      },
+                      {
+                        "x": 16,
+                        "y": 440
                       }
                     ]
                   ]
@@ -1171,6 +2788,7 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Evil_Bullet",
+      "preScale": 0.2,
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -1191,17 +2809,17 @@
       ],
       "animations": [
         {
-          "name": "NewSprite2",
+          "name": "enemyBullet",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.2,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite11",
+                  "image": "assets\\enemy2frames\\enemy2prjctl.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1217,20 +2835,56 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 14,
-                        "y": 20
+                        "x": 64,
+                        "y": 16
                       },
                       {
-                        "x": 46,
-                        "y": 20
+                        "x": 448,
+                        "y": 16
                       },
                       {
-                        "x": 46,
-                        "y": 50
+                        "x": 448,
+                        "y": 496
                       },
                       {
-                        "x": 14,
-                        "y": 50
+                        "x": 64,
+                        "y": 496
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy2frames\\enemy2prjctl(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 64,
+                        "y": 16
+                      },
+                      {
+                        "x": 448,
+                        "y": 16
+                      },
+                      {
+                        "x": 448,
+                        "y": 496
+                      },
+                      {
+                        "x": 64,
+                        "y": 496
                       }
                     ]
                   ]
@@ -1301,44 +2955,7 @@
               "looping": false,
               "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "NewSprite12",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 8,
-                        "y": 13
-                      },
-                      {
-                        "x": 56,
-                        "y": 13
-                      },
-                      {
-                        "x": 56,
-                        "y": 52
-                      },
-                      {
-                        "x": 8,
-                        "y": 52
-                      }
-                    ]
-                  ]
-                }
-              ]
+              "sprites": []
             }
           ]
         }
@@ -1358,7 +2975,7 @@
           "type": "BoidsMovement::BoidsMovement",
           "MaxSpeed": 360,
           "MaxAcceleration": 720,
-          "ShouldRotate": true,
+          "ShouldRotate": false,
           "CohesionRadius": 64,
           "AlignmentRadius": 48,
           "SeparationRadius": 32,
@@ -1398,17 +3015,17 @@
       ],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "enemyMeleeL",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.2,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite13",
+                  "image": "assets\\enemy3frames\\enemy3L(2).png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1424,20 +3041,284 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 15,
-                        "y": 21
+                        "x": 24,
+                        "y": 48
                       },
                       {
-                        "x": 49,
-                        "y": 21
+                        "x": 472,
+                        "y": 48
                       },
                       {
-                        "x": 49,
-                        "y": 53
+                        "x": 472,
+                        "y": 464
                       },
                       {
-                        "x": 15,
-                        "y": 53
+                        "x": 24,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy3frames\\enemy3L.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 24,
+                        "y": 48
+                      },
+                      {
+                        "x": 472,
+                        "y": 48
+                      },
+                      {
+                        "x": 472,
+                        "y": 464
+                      },
+                      {
+                        "x": 24,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy3frames\\enemy3L(2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 24,
+                        "y": 48
+                      },
+                      {
+                        "x": 472,
+                        "y": 48
+                      },
+                      {
+                        "x": 472,
+                        "y": 464
+                      },
+                      {
+                        "x": 24,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy3frames\\enemy3L(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 24,
+                        "y": 48
+                      },
+                      {
+                        "x": 472,
+                        "y": 48
+                      },
+                      {
+                        "x": 472,
+                        "y": 464
+                      },
+                      {
+                        "x": 24,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "enemyMeleeR",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.2,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy3frames\\enemy3R(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 24,
+                        "y": 48
+                      },
+                      {
+                        "x": 472,
+                        "y": 48
+                      },
+                      {
+                        "x": 472,
+                        "y": 464
+                      },
+                      {
+                        "x": 24,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy3frames\\enemy3R.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 24,
+                        "y": 48
+                      },
+                      {
+                        "x": 472,
+                        "y": 48
+                      },
+                      {
+                        "x": 472,
+                        "y": 464
+                      },
+                      {
+                        "x": 24,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy3frames\\enemy3R(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 24,
+                        "y": 48
+                      },
+                      {
+                        "x": 472,
+                        "y": 48
+                      },
+                      {
+                        "x": 472,
+                        "y": 464
+                      },
+                      {
+                        "x": 24,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy3frames\\enemy3R(2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 24,
+                        "y": 48
+                      },
+                      {
+                        "x": 472,
+                        "y": 48
+                      },
+                      {
+                        "x": 472,
+                        "y": 464
+                      },
+                      {
+                        "x": 24,
+                        "y": 464
                       }
                     ]
                   ]
@@ -1462,7 +3343,7 @@
           "type": "BoidsMovement::BoidsMovement",
           "MaxSpeed": 360,
           "MaxAcceleration": 720,
-          "ShouldRotate": true,
+          "ShouldRotate": false,
           "CohesionRadius": 64,
           "AlignmentRadius": 48,
           "SeparationRadius": 32,
@@ -1532,17 +3413,17 @@
       ],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "enemyExplodeL",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.2,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite14",
+                  "image": "assets\\enemy1frames\\enemy1L(2).png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1558,20 +3439,440 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 13,
-                        "y": 18
+                        "x": 104,
+                        "y": 64
                       },
                       {
-                        "x": 50,
-                        "y": 18
+                        "x": 448,
+                        "y": 64
                       },
                       {
-                        "x": 50,
-                        "y": 59
+                        "x": 448,
+                        "y": 464
                       },
                       {
-                        "x": 13,
-                        "y": 59
+                        "x": 104,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy1frames\\enemy1L(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 104,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 464
+                      },
+                      {
+                        "x": 104,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy1frames\\enemy1L(2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 104,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 464
+                      },
+                      {
+                        "x": 104,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy1frames\\enemy1L.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 104,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 464
+                      },
+                      {
+                        "x": 104,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "enemyExplodeR",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.2,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy1frames\\enemy1R(2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 104,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 464
+                      },
+                      {
+                        "x": 104,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy1frames\\enemy1R(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 104,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 464
+                      },
+                      {
+                        "x": 104,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy1frames\\enemy1R(2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 104,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 464
+                      },
+                      {
+                        "x": 104,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy1frames\\enemy1R.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 104,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 464
+                      },
+                      {
+                        "x": 104,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "enemyExplodeDeath",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.3,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy1frames\\enemy1explode(2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 104,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 464
+                      },
+                      {
+                        "x": 104,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy1frames\\enemy1explode(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 104,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 464
+                      },
+                      {
+                        "x": 104,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy1frames\\enemy1explode.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 104,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 464
+                      },
+                      {
+                        "x": 104,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\enemy1frames\\enemy1explode(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 104,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 64
+                      },
+                      {
+                        "x": 448,
+                        "y": 464
+                      },
+                      {
+                        "x": 104,
+                        "y": 464
                       }
                     ]
                   ]
@@ -1628,6 +3929,7 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Dash",
+      "preScale": 0.2,
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -1635,17 +3937,17 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "dashPatchAnim",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.5,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite16",
+                  "image": "assets\\patchdashframes\\patchdash(2).png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1661,20 +3963,128 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 8,
-                        "y": 16
+                        "x": 48,
+                        "y": 40
                       },
                       {
-                        "x": 55,
-                        "y": 16
+                        "x": 464,
+                        "y": 40
                       },
                       {
-                        "x": 55,
-                        "y": 55
+                        "x": 464,
+                        "y": 480
                       },
                       {
-                        "x": 8,
-                        "y": 55
+                        "x": 48,
+                        "y": 480
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchdashframes\\patchdash(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 40
+                      },
+                      {
+                        "x": 464,
+                        "y": 40
+                      },
+                      {
+                        "x": 464,
+                        "y": 480
+                      },
+                      {
+                        "x": 48,
+                        "y": 480
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchdashframes\\patchdash(2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 40
+                      },
+                      {
+                        "x": 464,
+                        "y": 40
+                      },
+                      {
+                        "x": 464,
+                        "y": 480
+                      },
+                      {
+                        "x": 48,
+                        "y": 480
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchdashframes\\patchdash.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 40
+                      },
+                      {
+                        "x": 464,
+                        "y": 40
+                      },
+                      {
+                        "x": 464,
+                        "y": 480
+                      },
+                      {
+                        "x": 48,
+                        "y": 480
                       }
                     ]
                   ]
@@ -1689,6 +4099,7 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Freeze_Time",
+      "preScale": 0.2,
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -1696,17 +4107,17 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "freezePatchAnim",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.5,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite17",
+                  "image": "assets\\patchfreezeframes\\patchfreeze2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1722,20 +4133,128 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 9,
-                        "y": 16
+                        "x": 16,
+                        "y": 56
                       },
                       {
-                        "x": 55,
-                        "y": 16
+                        "x": 504,
+                        "y": 56
                       },
                       {
-                        "x": 55,
-                        "y": 55
+                        "x": 504,
+                        "y": 496
                       },
                       {
-                        "x": 9,
-                        "y": 55
+                        "x": 16,
+                        "y": 496
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchfreezeframes\\patchfreeze3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 56
+                      },
+                      {
+                        "x": 504,
+                        "y": 56
+                      },
+                      {
+                        "x": 504,
+                        "y": 496
+                      },
+                      {
+                        "x": 16,
+                        "y": 496
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchfreezeframes\\patchfreeze1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 56
+                      },
+                      {
+                        "x": 504,
+                        "y": 56
+                      },
+                      {
+                        "x": 504,
+                        "y": 496
+                      },
+                      {
+                        "x": 16,
+                        "y": 496
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchfreezeframes\\patchfreeze3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 56
+                      },
+                      {
+                        "x": 504,
+                        "y": 56
+                      },
+                      {
+                        "x": 504,
+                        "y": 496
+                      },
+                      {
+                        "x": 16,
+                        "y": 496
                       }
                     ]
                   ]
@@ -1792,6 +4311,7 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Bomb_powerup",
+      "preScale": 0.2,
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -1799,17 +4319,17 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "Bomb_lol",
+          "name": "bombPatchAnim",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.5,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Bomb_lol",
+                  "image": "assets\\patchbombframes\\patchbomb(1).png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1825,20 +4345,128 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 6,
-                        "y": 12
+                        "x": 48,
+                        "y": 48
                       },
                       {
-                        "x": 58,
-                        "y": 12
+                        "x": 480,
+                        "y": 48
                       },
                       {
-                        "x": 58,
-                        "y": 53
+                        "x": 480,
+                        "y": 496
                       },
                       {
-                        "x": 6,
-                        "y": 53
+                        "x": 48,
+                        "y": 496
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchbombframes\\patchbomb(2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 48
+                      },
+                      {
+                        "x": 480,
+                        "y": 48
+                      },
+                      {
+                        "x": 480,
+                        "y": 496
+                      },
+                      {
+                        "x": 48,
+                        "y": 496
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchbombframes\\patchbomb.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 48
+                      },
+                      {
+                        "x": 480,
+                        "y": 48
+                      },
+                      {
+                        "x": 480,
+                        "y": 496
+                      },
+                      {
+                        "x": 48,
+                        "y": 496
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchbombframes\\patchbomb(2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 48
+                      },
+                      {
+                        "x": 480,
+                        "y": 48
+                      },
+                      {
+                        "x": 480,
+                        "y": 496
+                      },
+                      {
+                        "x": 48,
+                        "y": 496
                       }
                     ]
                   ]
@@ -1853,6 +4481,7 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "bomb",
+      "preScale": 0.2,
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -1903,17 +4532,17 @@
       ],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "bombCountdownAnim",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.3,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite18",
+                  "image": "assets\\bombcountdownframes\\bombexploding.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1929,20 +4558,284 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 17,
-                        "y": 6
+                        "x": 48,
+                        "y": 32
                       },
                       {
-                        "x": 57,
-                        "y": 6
+                        "x": 480,
+                        "y": 32
                       },
                       {
-                        "x": 57,
-                        "y": 48
+                        "x": 480,
+                        "y": 480
                       },
                       {
-                        "x": 17,
-                        "y": 48
+                        "x": 48,
+                        "y": 480
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\bombcountdownframes\\bombexploding(2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 480
+                      },
+                      {
+                        "x": 48,
+                        "y": 480
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\bombcountdownframes\\bombexploding(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 480
+                      },
+                      {
+                        "x": 48,
+                        "y": 480
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\bombcountdownframes\\bombexploding(3).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 480
+                      },
+                      {
+                        "x": 48,
+                        "y": 480
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "bombExplodeAnim",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.3,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\explosionframes\\bombexplosion(2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 480
+                      },
+                      {
+                        "x": 48,
+                        "y": 480
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\explosionframes\\bombexplosion(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 480
+                      },
+                      {
+                        "x": 48,
+                        "y": 480
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\explosionframes\\bombexplosion.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 480
+                      },
+                      {
+                        "x": 48,
+                        "y": 480
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\explosionframes\\bombexplosion(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 480
+                      },
+                      {
+                        "x": 48,
+                        "y": 480
                       }
                     ]
                   ]
@@ -1999,6 +4892,7 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "xlr8",
+      "preScale": 0.2,
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -2006,17 +4900,17 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "speedPatchAnim",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.5,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite19",
+                  "image": "assets\\patchspeedframes\\patchspeed3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2032,20 +4926,128 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 12,
-                        "y": 17
+                        "x": 40,
+                        "y": 56
                       },
                       {
-                        "x": 55,
-                        "y": 17
+                        "x": 480,
+                        "y": 56
                       },
                       {
-                        "x": 55,
-                        "y": 51
+                        "x": 480,
+                        "y": 464
                       },
                       {
-                        "x": 12,
-                        "y": 51
+                        "x": 40,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchspeedframes\\patchspeed2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 40,
+                        "y": 56
+                      },
+                      {
+                        "x": 480,
+                        "y": 56
+                      },
+                      {
+                        "x": 480,
+                        "y": 464
+                      },
+                      {
+                        "x": 40,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchspeedframes\\patchspeed3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 40,
+                        "y": 56
+                      },
+                      {
+                        "x": 480,
+                        "y": 56
+                      },
+                      {
+                        "x": 480,
+                        "y": 464
+                      },
+                      {
+                        "x": 40,
+                        "y": 464
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchspeedframes\\patchspeed1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 40,
+                        "y": 56
+                      },
+                      {
+                        "x": 480,
+                        "y": 56
+                      },
+                      {
+                        "x": 480,
+                        "y": 464
+                      },
+                      {
+                        "x": 40,
+                        "y": 464
                       }
                     ]
                   ]
@@ -2060,6 +5062,7 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Bullet_Damage",
+      "preScale": 0.2,
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -2067,17 +5070,17 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "dmgPatchAnim",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.5,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite20",
+                  "image": "assets\\patchdmgframes\\patchdmg3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2093,20 +5096,128 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 10,
-                        "y": 16
+                        "x": 32,
+                        "y": 24
                       },
                       {
-                        "x": 55,
-                        "y": 16
+                        "x": 488,
+                        "y": 24
                       },
                       {
-                        "x": 55,
-                        "y": 50
+                        "x": 488,
+                        "y": 480
                       },
                       {
-                        "x": 10,
-                        "y": 50
+                        "x": 32,
+                        "y": 480
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchdmgframes\\patchdmg1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32,
+                        "y": 24
+                      },
+                      {
+                        "x": 488,
+                        "y": 24
+                      },
+                      {
+                        "x": 488,
+                        "y": 480
+                      },
+                      {
+                        "x": 32,
+                        "y": 480
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchdmgframes\\patchdmg3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32,
+                        "y": 24
+                      },
+                      {
+                        "x": 488,
+                        "y": 24
+                      },
+                      {
+                        "x": 488,
+                        "y": 480
+                      },
+                      {
+                        "x": 32,
+                        "y": 480
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchdmgframes\\patchdmg2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32,
+                        "y": 24
+                      },
+                      {
+                        "x": 488,
+                        "y": 24
+                      },
+                      {
+                        "x": 488,
+                        "y": 480
+                      },
+                      {
+                        "x": 32,
+                        "y": 480
                       }
                     ]
                   ]
@@ -2163,6 +5274,7 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Multishot",
+      "preScale": 0.2,
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -2170,17 +5282,17 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "multPatchAnim",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.5,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite21",
+                  "image": "assets\\patchmultframes\\patchmult(2).png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2196,20 +5308,128 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 10,
-                        "y": 15
+                        "x": 48,
+                        "y": 24
                       },
                       {
-                        "x": 58,
-                        "y": 15
+                        "x": 488,
+                        "y": 24
                       },
                       {
-                        "x": 58,
-                        "y": 48
+                        "x": 488,
+                        "y": 480
                       },
                       {
-                        "x": 10,
-                        "y": 48
+                        "x": 48,
+                        "y": 480
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchmultframes\\patchmult(1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 24
+                      },
+                      {
+                        "x": 488,
+                        "y": 24
+                      },
+                      {
+                        "x": 488,
+                        "y": 480
+                      },
+                      {
+                        "x": 48,
+                        "y": 480
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchmultframes\\patchmult(2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 24
+                      },
+                      {
+                        "x": 488,
+                        "y": 24
+                      },
+                      {
+                        "x": 488,
+                        "y": 480
+                      },
+                      {
+                        "x": 48,
+                        "y": 480
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchmultframes\\patchmult.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 24
+                      },
+                      {
+                        "x": 488,
+                        "y": 24
+                      },
+                      {
+                        "x": 488,
+                        "y": 480
+                      },
+                      {
+                        "x": 48,
+                        "y": 480
                       }
                     ]
                   ]
@@ -2224,6 +5444,7 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "The_Nuclear_Option",
+      "preScale": 0.2,
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -2231,17 +5452,17 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "clearPatchAnim",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.5,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite22",
+                  "image": "assets\\patchwipeframes\\patchroomwipe(2).png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2257,52 +5478,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 13,
-                        "y": 12
+                        "x": 48,
+                        "y": 32
                       },
                       {
-                        "x": 55,
-                        "y": 12
+                        "x": 472,
+                        "y": 32
                       },
                       {
-                        "x": 55,
-                        "y": 52
+                        "x": 472,
+                        "y": 488
                       },
                       {
-                        "x": 13,
-                        "y": 52
+                        "x": 48,
+                        "y": 488
                       }
                     ]
                   ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "BG",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "NewSprite",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
+                },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite7",
+                  "image": "assets\\patchwipeframes\\patchroomwipe(1).png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2318,20 +5514,92 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 22
+                        "x": 48,
+                        "y": 32
                       },
                       {
-                        "x": 55,
-                        "y": 22
+                        "x": 472,
+                        "y": 32
                       },
                       {
-                        "x": 55,
-                        "y": 55
+                        "x": 472,
+                        "y": 488
                       },
                       {
-                        "x": 0,
-                        "y": 55
+                        "x": 48,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchwipeframes\\patchroomwipe(2).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 32
+                      },
+                      {
+                        "x": 472,
+                        "y": 32
+                      },
+                      {
+                        "x": 472,
+                        "y": 488
+                      },
+                      {
+                        "x": 48,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\patchwipeframes\\patchroomwipe.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 32
+                      },
+                      {
+                        "x": 472,
+                        "y": 32
+                      },
+                      {
+                        "x": 472,
+                        "y": 488
+                      },
+                      {
+                        "x": 48,
+                        "y": 488
                       }
                     ]
                   ]
@@ -2383,6 +5651,67 @@
         "characterSize": 20,
         "color": "0;0;0"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "BG",
+      "preScale": 0.5,
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\obstaclewalltile.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 512,
+                        "y": 0
+                      },
+                      {
+                        "x": 512,
+                        "y": 512
+                      },
+                      {
+                        "x": 0,
+                        "y": 512
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
